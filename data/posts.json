@@ -1,0 +1,233 @@
+[
+  {
+    "slug": "best-unblocked-idle-games",
+    "title": "12 Best Unblocked Idle Games You Can Actually Play on a School Chromebook",
+    "description": "A hand-tested list of the best unblocked idle and clicker games that run in a browser tab with no downloads, no installs and no launcher.",
+    "excerpt": "Every game on this list loads in a plain browser tab, saves your progress locally, and keeps running while you switch away. No downloads, no launcher, no plugin.",
+    "category": "Guides",
+    "author": "ClickVault Editorial",
+    "publishedAt": "2026-08-21",
+    "updatedAt": "2026-08-29",
+    "readingMinutes": 7,
+    "hero": "/thumbs/blog-best-idle.svg",
+    "relatedGames": ["cookie-empire-tycoon", "idle-mine-shaft", "capybara-coin-farm"],
+    "intro": [
+      "Idle games are the one genre that genuinely suits a locked-down school or office machine. They are small, they run in a single browser tab, and they are designed to keep earning while you are looking at something else entirely.",
+      "We loaded every game below on a stock managed Chromebook with no extensions, no sideloading and no developer mode. If a game needed a plugin, a download or a login wall, it did not make the list."
+    ],
+    "sections": [
+      {
+        "heading": "What makes an idle game 'unblocked'",
+        "paragraphs": [
+          "There is no such thing as a game that is universally unblocked. What people actually mean is a game that is delivered as plain HTML5 over HTTPS from a domain that has not been categorised as gaming by the network filter, and that does not need anything installed to run.",
+          "That gives you three practical requirements, and every entry on this list meets all three."
+        ],
+        "list": [
+          "Runs entirely in the browser with HTML5 and WebGL, no Flash, Unity Web Player or Java applet.",
+          "Saves progress to local storage, so you keep your numbers even without an account.",
+          "Degrades gracefully on a low-spec machine with integrated graphics and 4 GB of RAM."
+        ]
+      },
+      {
+        "heading": "The best pure clickers",
+        "paragraphs": [
+          "Pure clickers put the whole game in one number going up. The good ones make the first ten minutes feel generous and the next ten hours feel earned, usually by hiding a prestige multiplier behind a wall you can just about see from the start.",
+          "Cookie Empire Tycoon is the cleanest example we host. Your first upgrade costs fifteen cookies and arrives inside twenty seconds, which is exactly the kind of early payoff that makes the genre stick. Crystal Tap Tycoon is the opposite pitch: a deliberately tight thirty-minute prestige loop built for people who only get one free period."
+        ]
+      },
+      {
+        "heading": "The best idle games with real strategy",
+        "paragraphs": [
+          "If a bare number going up does nothing for you, the management-flavoured end of the genre adds decisions with actual opportunity cost. Idle Space Colony makes you trade oxygen against power against population, and a bad allocation will stall you for twenty minutes.",
+          "Idle Mine Shaft sits in the middle. There is a genuine routing puzzle in how you sink shafts and staff elevators, but the game will still tick along happily if you ignore it for a day."
+        ]
+      },
+      {
+        "heading": "How offline earnings change what you should play",
+        "paragraphs": [
+          "Offline earnings are the single biggest factor in whether an idle game suits a school day. A game that pays full rate while closed rewards checking in twice a day. A game that pays nothing while closed effectively demands a pinned tab.",
+          "Check the upgrade list for anything mentioning offline, away or absent production before you commit an afternoon. If it caps offline income at two hours, treat it as an active game with idle decoration."
+        ]
+      },
+      {
+        "heading": "Playing without wrecking your battery",
+        "paragraphs": [
+          "Clicker games look cheap to run and often are not. An uncapped animation loop with a few hundred particle sprites will happily burn a Chromebook battery faster than a video call.",
+          "Two things help more than anything else: turn off particle effects in the options menu if the game exposes them, and keep the game in a foreground tab rather than a background one. Most browsers throttle background timers anyway, so a background idle tab is frequently earning less than you think while still costing you power."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do these games need Flash?",
+        "a": "No. Flash was removed from every major browser at the end of 2020. Every game on this list is HTML5 and runs natively in Chrome, Edge, Firefox and Safari."
+      },
+      {
+        "q": "Will my progress save if I close the tab?",
+        "a": "Yes, as long as your browser allows local storage for the site. Progress is stored on the device, not on our servers, so clearing your browsing data or switching machines will reset you."
+      },
+      {
+        "q": "Can I play these on a phone?",
+        "a": "All of them are playable on mobile, but the management-heavy titles like Idle Space Colony are much more comfortable on a screen wider than about 700 pixels."
+      },
+      {
+        "q": "Why is the game a black rectangle?",
+        "a": "Almost always a blocked third-party frame or a WebGL failure. Try a hard refresh first, then check whether your network filter is stripping the embed domain."
+      }
+    ]
+  },
+  {
+    "slug": "how-idle-games-work",
+    "title": "How Idle Games Actually Work: Prestige, Offline Earnings and the Maths Behind the Grind",
+    "description": "Exponential costs, prestige multipliers and offline accrual explained in plain language, so you can tell a well-tuned idle game from a padded one.",
+    "excerpt": "Every idle game is the same three formulas wearing a different costume. Once you can see them, you can predict when a game is about to stall and when it is about to snowball.",
+    "category": "Explainers",
+    "author": "ClickVault Editorial",
+    "publishedAt": "2026-08-12",
+    "updatedAt": "2026-08-26",
+    "readingMinutes": 8,
+    "hero": "/thumbs/blog-idle-math.svg",
+    "relatedGames": ["click-kingdom", "crystal-tap-tycoon", "burger-baron-idle"],
+    "intro": [
+      "Idle games feel generous at the start and grinding later, and that shift is not an accident. It falls out of one design decision: costs grow geometrically while income grows linearly until you buy your way out of it.",
+      "Understanding the three formulas underneath the genre takes about ten minutes and permanently changes how you play. You stop buying the upgrade that is in front of you and start buying the one that resets the curve."
+    ],
+    "sections": [
+      {
+        "heading": "The cost curve is geometric, and that is the whole game",
+        "paragraphs": [
+          "In nearly every idle game, the nth copy of a building costs base multiplied by growth raised to the power of n. Growth is usually somewhere between 1.07 and 1.15. At 1.15, every seventh purchase roughly triples the price.",
+          "Your income from that building, meanwhile, is flat per copy. Ten copies produce ten times one copy. So income climbs in a straight line while price climbs on a curve, and the curve always wins. Every stall you ever hit is that crossover point arriving."
+        ]
+      },
+      {
+        "heading": "Prestige exists to bend the curve, not to reward you",
+        "paragraphs": [
+          "Prestige resets your buildings and hands back a permanent multiplier, usually scaled to the square root or cube root of your lifetime earnings. That sublinear scaling is deliberate: it means your second run is much faster than your first, but your tenth is not ten times faster than your ninth.",
+          "The practical rule most well-tuned games converge on is to reset when your multiplier would gain somewhere between fifty and one hundred per cent. Resetting earlier wastes the run-up; resetting later means grinding through the flat part of the curve for a rounding error."
+        ],
+        "list": [
+          "Multiplier gain under 20 per cent: keep playing, you are leaving value on the table.",
+          "Multiplier gain 50 to 100 per cent: this is the sweet spot for almost every game in the genre.",
+          "Multiplier gain over 300 per cent: you waited too long and spent an hour earning nothing."
+        ]
+      },
+      {
+        "heading": "Offline earnings are a rate, a cap and a multiplier",
+        "paragraphs": [
+          "Offline accrual has three separate knobs and games advertise only the flattering one. The rate is what fraction of your active income you earn while away, often 50 per cent. The cap is the maximum window that counts, often two to eight hours. The multiplier is whatever upgrade or advert doubles it.",
+          "A game paying 100 per cent with a two-hour cap is far worse for a school day than one paying 25 per cent with a twenty-four-hour cap. Always read for the cap first."
+        ]
+      },
+      {
+        "heading": "Why the numbers get silly on purpose",
+        "paragraphs": [
+          "Once costs grow geometrically for long enough you run out of ordinary number names, which is why the genre is full of sextillions and why so many games switch to scientific notation past a certain tier.",
+          "This is not padding for its own sake. Very large numbers let a designer hand you an upgrade that multiplies income by a thousand and still have somewhere to go afterwards. The absurdity is the pressure valve that keeps the reward curve from flattening."
+        ]
+      },
+      {
+        "heading": "Spotting a badly tuned game in five minutes",
+        "paragraphs": [
+          "Buy the cheapest producer repeatedly and watch how fast the price outruns your income. If you stall before your first upgrade unlocks, the growth exponent is set too high and the game is going to lean on advert-watching to unstick you.",
+          "The other reliable tell is an upgrade list with no visible next tier. Good idle games show you the locked thing you cannot afford yet, because the anticipation is the product. A game that hides its progression is usually hiding how little of it there is."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is clicking faster actually worth it?",
+        "a": "Only in the first few minutes. In almost every idle game, manual clicks stop mattering once your passive income passes roughly ten times your click value, which usually happens inside the first half hour."
+      },
+      {
+        "q": "Should I always take the advert bonus?",
+        "a": "Take the ones that multiply income for a fixed window while you are actively playing. Skip the ones that grant a flat sum, because a flat reward that felt large an hour ago is a rounding error now."
+      },
+      {
+        "q": "What does sublinear prestige scaling mean in practice?",
+        "a": "It means your multiplier grows more slowly than your earnings do. Earning a hundred times more in a run might only double your permanent bonus, which is what stops the genre from collapsing after three resets."
+      },
+      {
+        "q": "Do idle games ever end?",
+        "a": "Most have a defined final upgrade and an ending screen, then continue in an endless mode. A minority are genuinely unbounded and simply keep adding zeroes."
+      }
+    ]
+  },
+  {
+    "slug": "what-unblocked-really-means",
+    "title": "Why School Networks Block Games, and What 'Unblocked' Really Means",
+    "description": "A plain explanation of how school and office web filters categorise sites, why some browser games load and others do not, and what the term unblocked actually describes.",
+    "excerpt": "Filters do not detect games. They match domains against a category list. Understanding that difference explains almost every case of one game loading and another not.",
+    "category": "Explainers",
+    "author": "ClickVault Editorial",
+    "publishedAt": "2026-07-30",
+    "updatedAt": "2026-08-18",
+    "readingMinutes": 6,
+    "hero": "/thumbs/blog-unblocked.svg",
+    "relatedGames": ["pixel-dash", "slope-runner-x", "tank-duel-arena"],
+    "intro": [
+      "The word unblocked has drifted a long way from anything technical. It started as a description of a specific situation and is now mostly a search term, which is why so many sites promising unblocked games do not load on the network you actually care about.",
+      "Here is what is really happening between your browser and the game, and why the answer is different on every network."
+    ],
+    "sections": [
+      {
+        "heading": "Filters match categories, not content",
+        "paragraphs": [
+          "A school web filter almost never looks at what a page contains. It resolves the domain, looks it up in a commercial category database, and allows or denies based on whether that category is on the permit list. Games, streaming and social are the usual first three to go.",
+          "This is why a game can be entirely wholesome and still be blocked, and why a site with no games on it at all can be blocked for having once been categorised as gaming. The decision was made by a database, not by an assessment of the page."
+        ]
+      },
+      {
+        "heading": "Why one game loads and the next does not",
+        "paragraphs": [
+          "Browser games are usually embedded from a different domain than the site you are looking at. The page is served from one host, the game itself from another. The filter sees both requests separately.",
+          "So a portal can load perfectly while every game on it shows a blank rectangle, because the page domain is uncategorised and the embed domain is not. That mismatch accounts for the large majority of broken embeds."
+        ],
+        "list": [
+          "Page loads, game is blank: the embed host is filtered, not the site.",
+          "Nothing loads at all: the site domain itself is categorised and blocked.",
+          "Game loads then freezes: usually a WebGL or memory limit on a managed device, not the filter."
+        ]
+      },
+      {
+        "heading": "What unblocked honestly means",
+        "paragraphs": [
+          "Used accurately, it means a game delivered from a domain that a given filter has not categorised as gaming, using only standard web technology so nothing needs installing. Both halves are conditional on the network.",
+          "No site can truthfully promise it is unblocked everywhere, ours included. A filter administrator can categorise any domain at any time, and a well-run network eventually will."
+        ]
+      },
+      {
+        "heading": "The part worth saying plainly",
+        "paragraphs": [
+          "If your school or employer blocks games, that is a decision made by the people who own the network and the device. Working around it can breach an acceptable use policy, and on a managed device it can be logged in ways that are not obvious from the machine itself.",
+          "We are not going to publish proxy lists or filter-evasion instructions. What this site is for is playing browser games on a network where that is allowed: your own connection, your own laptop, a break at a place that does not mind."
+        ]
+      },
+      {
+        "heading": "Making the most of a restricted machine",
+        "paragraphs": [
+          "Where games are permitted, a managed device is still a constrained one. Assume integrated graphics, limited memory and an aggressive tab-suspension policy, and prefer games that state a low system requirement.",
+          "Progress on almost every browser game is stored locally, so it lives on that specific device and profile. If administrators wipe profiles between terms, expect to start over, and treat any run you care about as something to finish rather than bank."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is it against the rules to play games at school?",
+        "a": "That depends entirely on your school's acceptable use policy. If games are blocked, it is safe to assume the policy discourages them, and the honest answer is to ask rather than to route around it."
+      },
+      {
+        "q": "Why did a game that worked last week stop working?",
+        "a": "Most often the embed host was newly categorised by the filter vendor, which happens continuously. Less often, the game's own host changed domains."
+      },
+      {
+        "q": "Do you provide proxies or filter workarounds?",
+        "a": "No. We host and link browser games for networks where that is permitted, and we do not publish anything intended to bypass a filter."
+      },
+      {
+        "q": "Does incognito mode unblock anything?",
+        "a": "No. Network-level filtering happens between the device and the internet, so it applies identically in a private window. Incognito only affects what is stored locally, and it will also discard your game saves."
+      }
+    ]
+  }
+]

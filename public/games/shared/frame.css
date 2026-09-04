@@ -1,0 +1,170 @@
+/* ClickVault first-party game chrome.
+   Loaded only inside /games/<slug>/index.html, which the site embeds in an iframe.
+   It never touches the parent page's CSS. Keep this file dependency-free. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: #0b0d15;
+  color: #f4f5f9;
+  font: 500 15px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+
+/* ---------- HUD ---------- */
+.cv-hud {
+  position: absolute; inset: 0 0 auto 0; z-index: 3;
+  display: flex; align-items: center; gap: 16px;
+  padding: 10px 14px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+  pointer-events: none;
+}
+.cv-stat { display: grid; gap: 1px; }
+.cv-label {
+  font-size: 9px; font-weight: 800; letter-spacing: .14em;
+  text-transform: uppercase; color: rgba(244, 245, 249, .5);
+}
+.cv-value { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1; }
+.cv-hud .cv-right { margin-left: auto; display: flex; gap: 8px; pointer-events: auto; }
+
+/* ---------- Overlay ---------- */
+.cv-overlay {
+  position: absolute; inset: 0; z-index: 5;
+  display: grid; place-items: center; padding: 20px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(29, 61, 245, .3), rgba(11, 13, 21, .88) 62%, rgba(11, 13, 21, .96));
+}
+.cv-overlay[hidden] { display: none; }
+
+.cv-panel {
+  width: min(430px, 100%); text-align: center;
+  background: rgba(17, 20, 32, .92);
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 18px; padding: 24px 22px;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .9);
+}
+.cv-panel h1 { margin: 0 0 6px; font-size: 26px; font-weight: 900; letter-spacing: -.02em; }
+.cv-panel p { margin: 0 0 16px; font-size: 14px; color: rgba(244, 245, 249, .7); }
+.cv-score {
+  font-size: 42px; font-weight: 900; line-height: 1;
+  margin: 6px 0 3px; font-variant-numeric: tabular-nums;
+}
+.cv-sub {
+  font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .14em;
+  color: rgba(244, 245, 249, .5); margin-bottom: 18px;
+}
+.cv-keys {
+  display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;
+  margin: 0 0 18px; font-size: 11px; color: rgba(244, 245, 249, .55);
+}
+.cv-keys kbd {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .14); border-bottom-width: 2px;
+  border-radius: 6px; padding: 2px 6px; font: inherit; font-weight: 700; color: #fff;
+}
+
+/* ---------- Buttons ---------- */
+.cv-btn {
+  appearance: none; border: 0; cursor: pointer; font: inherit; font-weight: 800;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 24px; border-radius: 12px; color: #fff;
+  background: linear-gradient(180deg, #3355f7, #1d3df5);
+  box-shadow: 0 8px 20px -8px rgba(29, 61, 245, .9);
+  transition: transform .12s ease, filter .12s ease;
+}
+.cv-btn:hover { filter: brightness(1.08); }
+.cv-btn:active { transform: translateY(1px) scale(.99); }
+.cv-btn-ghost {
+  background: rgba(255, 255, 255, .08); box-shadow: none;
+  padding: 7px 13px; font-size: 12px; border: 1px solid rgba(255, 255, 255, .1);
+}
+.cv-toast {
+  position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 6;
+  background: rgba(17, 20, 32, .95); border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 999px; padding: 8px 16px; font-size: 12px; font-weight: 700;
+  opacity: 0; transition: opacity .2s; pointer-events: none;
+}
+.cv-toast.is-on { opacity: 1; }
+
+/* ---------- Idle games (DOM UI, not canvas) ---------- */
+body.cv-idle { overflow: auto; }
+.cv-idle-wrap {
+  display: grid; gap: 14px; padding: 14px; min-height: 100%;
+  grid-template-columns: minmax(0, 1fr); align-content: start;
+}
+@media (min-width: 800px) { .cv-idle-wrap { grid-template-columns: minmax(0, 1fr) 350px; } }
+
+.cv-stage {
+  position: relative; overflow: hidden; border-radius: 18px; min-height: 280px;
+  display: grid; place-items: center; gap: 4px; padding: 20px; text-align: center;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+.cv-tap {
+  appearance: none; border: 0; background: transparent; cursor: pointer;
+  font: inherit; color: inherit; padding: 0; display: grid; gap: 10px; place-items: center;
+}
+.cv-tap-art {
+  font-size: clamp(72px, 22vw, 118px); line-height: 1;
+  filter: drop-shadow(0 12px 26px rgba(0, 0, 0, .55));
+  transition: transform .07s ease;
+}
+.cv-tap:active .cv-tap-art { transform: scale(.93); }
+.cv-tap-hint { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; opacity: .6; }
+.cv-balance { font-size: 34px; font-weight: 900; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.cv-rate { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; opacity: .62; }
+.cv-bar { width: min(300px, 90%); height: 7px; border-radius: 999px; background: rgba(0, 0, 0, .4); overflow: hidden; }
+.cv-bar > i { display: block; height: 100%; width: 0; border-radius: 999px; background: #fff; transition: width .1s linear; }
+
+.cv-float {
+  position: absolute; pointer-events: none; z-index: 4;
+  font-weight: 900; font-size: 16px; text-shadow: 0 2px 6px rgba(0, 0, 0, .6);
+  animation: cvFloat .85s ease-out forwards;
+}
+@keyframes cvFloat { to { transform: translateY(-52px); opacity: 0; } }
+
+.cv-col { display: grid; gap: 10px; align-content: start; }
+.cv-card {
+  background: rgba(17, 20, 32, .82); border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 14px; padding: 12px;
+}
+.cv-card > h2 {
+  margin: 0 0 9px; font-size: 10px; font-weight: 800; letter-spacing: .14em;
+  text-transform: uppercase; color: rgba(244, 245, 249, .5);
+}
+
+.cv-buys { display: flex; gap: 6px; margin-bottom: 9px; }
+.cv-chip {
+  flex: 1; appearance: none; cursor: pointer; font: inherit; font-weight: 800; font-size: 11px;
+  color: inherit; padding: 6px; border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, .1); background: rgba(255, 255, 255, .04);
+}
+.cv-chip.is-on { background: #1d3df5; border-color: #1d3df5; color: #fff; }
+
+.cv-row {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  appearance: none; cursor: pointer; font: inherit; color: inherit;
+  border: 1px solid rgba(255, 255, 255, .07); background: rgba(255, 255, 255, .03);
+  border-radius: 11px; padding: 9px 10px;
+  transition: background .12s, border-color .12s;
+}
+.cv-row + .cv-row { margin-top: 6px; }
+.cv-row:enabled:hover { background: rgba(255, 255, 255, .07); border-color: rgba(255, 255, 255, .15); }
+.cv-row:disabled { opacity: .4; cursor: not-allowed; }
+.cv-row .cv-icon { font-size: 22px; width: 30px; text-align: center; flex: none; }
+.cv-row .cv-meta { flex: 1; min-width: 0; }
+.cv-row .cv-name { font-weight: 800; font-size: 13px; }
+.cv-row .cv-desc { font-size: 11px; color: rgba(244, 245, 249, .55); }
+.cv-row .cv-end { text-align: right; flex: none; }
+.cv-row .cv-cost { font-weight: 800; font-size: 12px; white-space: nowrap; }
+.cv-row .cv-own { font-size: 11px; color: rgba(244, 245, 249, .5); }
+
+.cv-foot { font-size: 11px; color: rgba(244, 245, 249, .4); text-align: center; padding: 2px 0 8px; }
+.cv-foot button { margin: 0 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
