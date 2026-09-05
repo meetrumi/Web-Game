@@ -16,13 +16,18 @@ import { useCallback, useRef, useState } from 'react'
  *  the safe zones are marked there.
  * ============================================================================
  *
- * Click-to-play by default: the third-party iframe is not created until the user
- * asks for it. That keeps the game host's JS out of your Largest Contentful Paint
- * and off the critical path entirely. Pass `autoLoad` to embed immediately.
+ * Click-to-play by default: the iframe is not created until the user asks for it.
+ * That keeps the game's JS out of your Largest Contentful Paint and off the critical
+ * path entirely. Pass `autoLoad` to embed immediately.
+ *
+ * A game with an empty `iframeUrl` in data/games.json is treated as not built yet and
+ * renders an honest placeholder. Never let an empty URL reach the iframe — the user
+ * gets a blank black rectangle and no way to tell whether it is their connection.
  */
 
 export default function GameFrame({ game, autoLoad = false }) {
-  const [playing, setPlaying] = useState(autoLoad)
+  const ready = Boolean(game.iframeUrl)
+  const [playing, setPlaying] = useState(autoLoad && ready)
   const wrapperRef = useRef(null)
 
   const toggleFullscreen = useCallback(() => {
@@ -46,8 +51,9 @@ export default function GameFrame({ game, autoLoad = false }) {
       >
         {playing ? (
           <iframe
-            // >>> PLUG IN: game.iframeUrl comes from data/games.json. Replace the
-            // placeholder URLs there with your real embed URLs. <<<
+            // The bundled games are first-party static files under public/games/<slug>/,
+            // so this is a same-origin path, not a third-party embed. Same-origin is what
+            // lets each game keep its own localStorage save.
             src={game.iframeUrl}
             title={`Play ${game.title}`}
             className="absolute inset-0 h-full w-full border-0"
@@ -58,13 +64,13 @@ export default function GameFrame({ game, autoLoad = false }) {
             allowFullScreen
             referrerPolicy="strict-origin-when-cross-origin"
             loading="eager"
-            /* Third-party game embeds are untrusted code. If a game still works with
-               this on, keep it — it stops the frame navigating your top-level page.
-               Some engines need `allow-popups` or `allow-modals` added; a few break
-               entirely, in which case delete the attribute for that game.
+            /* The bundled games do not need a sandbox — they are your own code. Uncomment
+               this the day you embed someone else's game, because a third-party frame is
+               untrusted code and this stops it navigating your top-level page. Some engines
+               additionally need `allow-popups` or `allow-modals`.
             sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-popups-to-escape-sandbox" */
           />
-        ) : (
+        ) : ready ? (
           /* Poster / click-to-play state. Also the only place a "loading" visual
              should live — never a sponsored one. */
           <button
@@ -93,10 +99,34 @@ export default function GameFrame({ game, autoLoad = false }) {
               Loads instantly — no download required
             </span>
           </button>
+        ) : (
+          /* Not built yet. An honest placeholder beats a black rectangle, and this is
+             still inside the policy-clean zone — no ad, no fake loading spinner. */
+          <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-3 px-8 text-center">
+            <Image
+              src={game.thumbnail}
+              alt=""
+              fill
+              priority
+              sizes="(min-width: 1024px) 900px, 100vw"
+              className="object-cover opacity-20 blur-md"
+            />
+            <span className="relative grid h-16 w-16 place-items-center rounded-full bg-ink-800/90 text-3xl">
+              🛠️
+            </span>
+            <span className="relative text-lg font-bold text-white drop-shadow">
+              In the workshop
+            </span>
+            <span className="relative max-w-md text-sm text-white/70">
+              {game.title} is still being built. Every game here is written in-house rather
+              than borrowed, so this slot stays empty until it is genuinely playable.
+            </span>
+          </div>
         )}
       </div>
 
       {/* Control bar sits BELOW the frame, never over it. */}
+      {ready ? (
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <button type="button" onClick={toggleFullscreen} className="btn-secondary">
           <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
@@ -122,6 +152,7 @@ export default function GameFrame({ game, autoLoad = false }) {
           Trouble loading? Try a hard refresh (Ctrl + Shift + R).
         </p>
       </div>
+      ) : null}
     </div>
   )
 }

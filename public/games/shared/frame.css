@@ -165,6 +165,15 @@ body.cv-idle { overflow: auto; }
 .cv-foot { font-size: 11px; color: rgba(244, 245, 249, .4); text-align: center; padding: 2px 0 8px; }
 .cv-foot button { margin: 0 4px; }
 
+/* A 16:9 embed on a phone is only a few hundred pixels tall, so the stage gives up
+   some of its height to keep the shop within one short scroll of the tap target. */
+@media (max-height: 560px) {
+  .cv-stage { min-height: 186px; padding: 12px; }
+  .cv-tap-art { font-size: clamp(50px, 15vh, 86px); }
+  .cv-balance { font-size: 26px; }
+  .cv-idle-wrap { gap: 10px; padding: 10px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
