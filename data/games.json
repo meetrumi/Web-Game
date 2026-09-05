@@ -16,7 +16,7 @@
     "title": "Stack Tower Rush",
     "category": "unblocked",
     "thumbnail": "/thumbs/stack-tower-rush.svg",
-    "iframeUrl": "",
+    "iframeUrl": "/games/stack-tower-rush/index.html",
     "shortDescription": "Tap at exactly the right moment to drop each block dead centre. Perfect stacks stay wide, sloppy ones shave your tower down to a toothpick.",
     "tags": ["timing", "casual", "high-score"],
     "featured": true,
