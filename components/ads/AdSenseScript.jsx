@@ -33,7 +33,6 @@ export default function AdSenseScript() {
         * strategy="afterInteractive" is the right one here: the tag has to run
         * on the client but must not block first paint or the game embed.
         * ================================================================== */}
-      {/*
       <Script
         id="adsbygoogle-lib"
         async
@@ -41,7 +40,6 @@ export default function AdSenseScript() {
         crossOrigin="anonymous"
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`}
       />
-      */}
 
       {/* ==================================================================
         * >>> PLUG IN: ADSENSE AUTO ADS (site-wide) <<<
@@ -50,19 +48,15 @@ export default function AdSenseScript() {
         * with NEXT_PUBLIC_ADSENSE_AUTO_ADS=false without touching code.
         * ================================================================== */}
       {autoAds && (
-        <>
-          {/*
-          <Script id="adsbygoogle-auto" strategy="afterInteractive">
-            {`
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "${client}",
-                enable_page_level_ads: true,
-                overlays: { bottom: true }
-              });
-            `}
-          </Script>
-          */}
-        </>
+        <Script id="adsbygoogle-auto" strategy="afterInteractive">
+          {`
+            (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "${client}",
+              enable_page_level_ads: true,
+              overlays: { bottom: true }
+            });
+          `}
+        </Script>
       )}
     </>
   )
