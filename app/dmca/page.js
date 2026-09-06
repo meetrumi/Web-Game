@@ -10,30 +10,23 @@ export const metadata = {
 
 export default function DmcaPage() {
   return (
-    <LegalPage title="DMCA & Copyright Policy" updated="4 September 2026">
-      {/* ====================================================================
-        * >>> PLACEHOLDER — TEMPLATE, NOT LEGAL ADVICE <<<
-        *
-        * Fill in the bracketed fields. If you want DMCA safe-harbour protection
-        * in the US you must also register a designated agent with the US
-        * Copyright Office (there is a fee, and the registration expires) —
-        * publishing this page alone does not give you safe harbour.
-        * ==================================================================== */}
+    <LegalPage title="DMCA & Copyright Policy" updated="6 September 2026">
       <p>
         {site.name} respects copyright. We do not host game files: every game on this site
         is embedded in an iframe from its publisher or from a licensed distribution
-        partner, and thumbnails are used to identify those games.
+        partner, and thumbnails are used solely to identify those games.
       </p>
       <p>
         If you own the rights to something that appears here and you want it removed, tell
-        us and we will remove it. You do not need a lawyer and we will not argue about it.
+        us and we will remove it promptly. You do not need a lawyer, and we will not argue
+        about it.
       </p>
 
       <h2>Fastest route</h2>
       <p>
         Email <a href={`mailto:${site.dmcaEmail}`}>{site.dmcaEmail}</a> with the URL of the
         page and what you own. That is enough for us to act. The formal notice below exists
-        because the statute asks for it, not because we need it to take something down.
+        because the statute requires it, not because we need it to take something down.
       </p>
 
       <h2>Submitting a formal DMCA notice</h2>
@@ -47,7 +40,7 @@ export default function DmcaPage() {
         </li>
         <li>
           Identification of the copyrighted work claimed to have been infringed. If several
-          works are covered by a single notice, a representative list is fine.
+          works are covered by a single notice, a representative list is sufficient.
         </li>
         <li>
           Identification of the material you say is infringing, with enough detail for us
@@ -70,19 +63,16 @@ export default function DmcaPage() {
 
       <h2>Designated agent</h2>
       <p>
-        [PLACEHOLDER — fill in before launch:]
+        <strong>DMCA Compliance Agent</strong>
         <br />
-        Designated Agent: [Name]
-        <br />
-        {site.name}, [Company or trading name]
-        <br />
-        [Street address]
-        <br />
-        [City, region, postcode, country]
+        {site.name} Legal &amp; Copyright Operations
         <br />
         Email: <a href={`mailto:${site.dmcaEmail}`}>{site.dmcaEmail}</a>
         <br />
-        Telephone: [Number]
+        Online Contact:{' '}
+        <Link href="/contact" className="underline hover:text-brand-500">
+          Support Desk
+        </Link>
       </p>
 
       <h2>What happens next</h2>

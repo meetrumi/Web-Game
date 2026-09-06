@@ -66,9 +66,9 @@ export default function RootLayout({ children }) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashTheme }} />
 
-        {/* Speeds up the first game embed by warming the DNS/TLS handshake.
-            >>> PLUG IN: change to the host your real iframe URLs live on. <<< */}
-        <link rel="dns-prefetch" href="//example.com" />
+        {/* Speeds up the first game embed by warming the DNS/TLS handshake for ad networks */}
+        <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 
         {/* ==================================================================
           * >>> PLUG IN: GOOGLE ADSENSE SITE VERIFICATION META TAG <<<

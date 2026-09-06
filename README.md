@@ -3,9 +3,12 @@
 A Next.js 14 (App Router) game portal for the **unblocked idle & clicker games** niche,
 scaffolded for Adsterra + Google AdSense monetisation.
 
-Everything runs locally with placeholder data. No real game URLs, smart links or ad
-network IDs are baked in — every one of them is an env var or a clearly marked
-`>>> PLUG IN <<<` comment.
+**15 playable games ship with it**, all written for this project and served as static files
+from `public/games/` — no embeds, no third-party host, no licences to chase. See
+[Games](#games) for how they are built.
+
+No real smart links or ad network IDs are baked in — every one of them is an env var or a
+clearly marked `>>> PLUG IN <<<` comment, and nothing is live until you switch it on.
 
 ---
 
@@ -50,6 +53,7 @@ cp .env.local.example .env.local
 | Site name, tagline, emails, nav links | `lib/site.js` |
 | Categories (adding one creates a working `/category/<slug>` page) | `lib/site.js` |
 | Games, embed URLs, thumbnails | `data/games.json` |
+| The games themselves | `public/games/<slug>/game.js` |
 | Blog articles | `data/posts.json` |
 | Brand colours | `tailwind.config.js` → `theme.extend.colors` |
 | Smart link destination | `NEXT_PUBLIC_SMARTLINK_URL` |
@@ -74,6 +78,60 @@ cp .env.local.example .env.local
 Both category pages come from one `app/category/[slug]/page.js` with
 `generateStaticParams()` + `dynamicParams = false`, so exactly the two slugs in
 `lib/site.js` exist and anything else is a hard 404.
+
+---
+
+## Games
+
+All 15 games are written for this project and served from `public/games/<slug>/index.html`.
+None of them is an embed of someone else's game, so there is nothing here you need a licence
+for and no third-party host to keep alive.
+
+Because they are same-origin static files rather than a remote iframe, `localStorage` works
+inside the frame — that is what makes high scores and idle-game saves persist. It is also why
+`GameFrame` ships with its `sandbox` attribute commented out: sandboxing would sever
+same-origin access and wipe every save. **Uncomment it the day you embed a game you did not
+write** (see `components/GameFrame.jsx`).
+
+### The runtime
+
+`public/games/shared/core.js` is the whole engine, exposed as a single global, `window.CV`:
+
+| | |
+| --- | --- |
+| `canvas(sel)` | DPR-aware canvas (capped at 2×) that re-fits on resize |
+| `loop(fn)` | rAF loop with `dt` clamped at 0.05 s so a stalled tab cannot teleport anything |
+| `keys()`, `pointer()`, `swipe()` | input, Pointer Events throughout — one code path for mouse and touch |
+| `hud()`, `overlay()`, `toast()` | the shared chrome every game gets |
+| `best(id, score)`, `save`, `load`, `wipe` | `localStorage` under `cv:game:`; `best` only writes on an improvement |
+| `beep()`, `chord()`, `muteToggle()` | WebAudio, created lazily on the first real gesture so no browser blocks it |
+
+Conventions the games follow, worth keeping if you add one:
+
+- **A fixed design resolution, scaled at draw time.** Each game picks its own `W`/`H` and
+  computes `u = min(view.h / H, view.w / W)`, so it plays identically on a phone in portrait
+  and a desktop in landscape, letterboxed rather than reflowed.
+- **Classic `<script src>`, ES5 syntax, no inline script.** No bundler and no build step for
+  the games, and a strict CSP stays available to you later.
+- **Procedural rather than stored content.** Slope Runner X's course, for instance, is a pure
+  function of distance travelled — nothing to load, and identical on every device.
+- **`if (!document.hidden) update(dt)`.** Games never advance in a background tab.
+
+### The idle games
+
+The seven tycoon games are configuration, not code: each one calls `CV.Idle.start({…})` from
+`public/games/shared/idle.js` with its own producers, upgrades, prestige threshold and one
+mechanic of its own — a golden cookie, a power grid that browns out, a combo window, an order
+queue. The economy, the save format and offline accrual are shared, so a balance fix lands in
+all seven at once.
+
+### Adding a game
+
+1. `public/games/my-game/index.html` — copy an existing one; it loads `../shared/core.js`
+   then `game.js`, and nothing else.
+2. `public/games/my-game/game.js` — wrap it in `(function (CV) { … })(window.CV)`.
+3. Add the entry to `data/games.json` with `"iframeUrl": "/games/my-game/index.html"`.
+4. `node scripts/generate-thumbnails.mjs` for a placeholder card image.
 
 ---
 
@@ -141,6 +199,11 @@ lib/
   site.js                   branding, nav, categories, monetisation config
   games.js                  game queries + formatters
   posts.js                  post queries + ad density rule
+public/games/
+  shared/core.js            the game runtime — one global, `window.CV`
+  shared/idle.js            the idle/clicker engine the 7 tycoon games configure
+  <slug>/index.html         one page per game, loads core.js then game.js
+  <slug>/game.js            the game itself
 scripts/
   generate-thumbnails.mjs   placeholder SVG generator
 ```
@@ -153,9 +216,9 @@ scripts/
 - **Dark mode** via a `dark` class on `<html>`, with an inline script in `app/layout.js`
   that applies it before first paint so there is no white flash. Falls back to
   `prefers-color-scheme`.
-- **Click-to-play.** The third-party game iframe is not created until the visitor asks for
-  it, which keeps the game host's JavaScript out of your LCP entirely. Pass
-  `autoLoad` to `<GameFrame>` if you want the old behaviour.
+- **Click-to-play.** The game iframe is not created until the visitor asks for it, which keeps
+  the game's canvas and audio out of your LCP entirely and means a visitor who only browsed
+  never paid for it. Pass `autoLoad` to `<GameFrame>` if you want it eager.
 - **Lazy images.** `next/image` everywhere; `priorityCount` on `<GameGrid>` opts the
   above-the-fold thumbnails out of lazy loading.
 - **Search** submits to `/games?q=…` and filters server-side — a working version of the
@@ -193,12 +256,20 @@ these are build-time inlined values, not runtime lookups.
 
 ## Before you go live
 
-- [ ] Replace every `iframeUrl` in `data/games.json` with a real embed URL
+- [x] ~~Replace every `iframeUrl` in `data/games.json` with a real embed URL~~ — all 15 point
+      at bundled games under `public/games/`, so there is nothing external left to wire up
+- [ ] **Replace the `plays` counts in `data/games.json`.** They are invented numbers used to
+      sort the "popular" grid. Shipping them as-is puts fake social proof in front of visitors
+      and in front of an AdSense reviewer — wire the field to real analytics or drop it from
+      the card
 - [ ] Replace the placeholder thumbnails with real artwork
 - [ ] Set `NEXT_PUBLIC_SMARTLINK_URL`
 - [ ] Rewrite `/about` in your own words — a generic About page holds up AdSense review
 - [ ] Fill in every `[PLACEHOLDER]` in `/privacy-policy` and `/dmca`, and have the privacy
       policy reviewed by someone qualified
-- [ ] Point `dns-prefetch` in `app/layout.js` at your real game host
+- [ ] Point `dns-prefetch` in `app/layout.js` at your real game host — or drop it, now that
+      the games are same-origin and there is no third-party host to warm up
 - [ ] Decide the AdSense-vs-popunder question above, and add a CMP if you serve the EEA/UK
 - [ ] Exclude `/games/*` from Auto ads in the AdSense dashboard
+- [ ] Leave `GameFrame`'s `sandbox` attribute commented out only while every game is your
+      own; restore it the moment you embed a third party

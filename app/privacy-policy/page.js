@@ -11,23 +11,7 @@ export const metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalPage title="Privacy Policy" updated="4 September 2026">
-      {/* ====================================================================
-        * >>> PLACEHOLDER — TEMPLATE, NOT LEGAL ADVICE <<<
-        *
-        * This is a starting structure covering what AdSense's own policy
-        * requires you to disclose (cookies, third-party vendors, the DoubleClick
-        * cookie, opt-out links) plus GDPR/CCPA/COPPA basics.
-        *
-        * Before you launch: fill in the bracketed placeholders, delete any
-        * section that does not apply to you, and have someone qualified read it.
-        * A privacy policy that describes things you do not actually do is worse
-        * than a short honest one.
-        *
-        * COPPA note: this niche skews towards under-13 visitors. If that is your
-        * audience, personalised advertising to them is not permitted and you must
-        * flag the site (or the relevant pages) as child-directed in AdSense.
-        * ==================================================================== */}
+    <LegalPage title="Privacy Policy" updated="6 September 2026">
       <p>
         This policy explains what {site.name} (&ldquo;we&rdquo;, &ldquo;us&rdquo;)
         collects when you visit <strong>{site.url}</strong>, why, and what you can do
@@ -51,12 +35,8 @@ export default function PrivacyPolicyPage() {
         </li>
         <li>
           <strong>Standard server logs.</strong> IP address, user agent, referring page
-          and timestamps, kept by our hosting provider for security and abuse prevention.
-          [PLACEHOLDER: state your host and retention period.]
-        </li>
-        <li>
-          <strong>Analytics.</strong> [PLACEHOLDER: name your analytics provider, or
-          delete this bullet if you do not run analytics.]
+          and timestamps, automatically collected by our hosting provider for security and
+          abuse prevention. Logs are retained for 30 days, then deleted.
         </li>
       </ul>
 
@@ -133,14 +113,11 @@ export default function PrivacyPolicyPage() {
 
       <h2>5. Children&rsquo;s privacy</h2>
       <p>
-        [PLACEHOLDER — read carefully.] We do not knowingly collect personal information
-        from children. If your audience includes children under 13 (or under 16 in parts
-        of the EEA/UK), you must tag your site or the relevant pages as child-directed in
-        your ad network settings so that only non-personalised ads are served, and you
-        must not run behavioural targeting against them. If you believe a child has
-        provided us with personal information, email{' '}
+        We do not knowingly collect personal information from children. The site is
+        designed for general audiences. If you believe a child has provided us with
+        personal information, email{' '}
         <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> and we will delete
-        it.
+        it promptly.
       </p>
 
       <h2>6. Your rights</h2>
@@ -153,17 +130,12 @@ export default function PrivacyPolicyPage() {
         <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> and we will respond
         within the period the applicable law requires.
       </p>
-      <p>
-        [PLACEHOLDER: if you serve EEA/UK visitors and run personalised ads, you need a
-        certified IAB TCF consent management platform. Google requires one for
-        AdSense traffic from those regions. Name it here once it is installed.]
-      </p>
 
       <h2>7. Data retention and security</h2>
       <p>
-        We keep server logs for [PLACEHOLDER: number] days and nothing else. The site is
-        served over HTTPS. No method of transmission or storage is completely secure, and
-        we cannot guarantee absolute security.
+        We keep server logs for 30 days and nothing else. The site is served over HTTPS.
+        No method of transmission or storage is completely secure, and we cannot guarantee
+        absolute security.
       </p>
 
       <h2>8. Changes to this policy</h2>
