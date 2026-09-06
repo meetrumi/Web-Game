@@ -34,6 +34,9 @@ export const metadata = {
     card: 'summary_large_image',
     site: site.twitter,
   },
+  verification: {
+    google: 'iwga6og7ZBusx-R1A29T1MPqBwLLKP5nE0ciKMg6AuI',
+  },
   robots: { index: true, follow: true },
 }
 
