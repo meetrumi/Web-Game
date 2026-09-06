@@ -73,11 +73,15 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 
-        {/* ==================================================================
-          * >>> PLUG IN: GOOGLE ADSENSE SITE VERIFICATION META TAG <<<
-          * AdSense sometimes asks you to paste a meta tag instead of a script.
-          * ================================================================== */}
-        {/* <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX" /> */}
+        {/* Google AdSense script in <head> for site verification and auto ads */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1621041383720121"
+          crossOrigin="anonymous"
+        />
+
+        {/* Google AdSense account verification meta tag */}
+        <meta name="google-adsense-account" content="ca-pub-1621041383720121" />
 
         {/* ==================================================================
           * >>> PLUG IN: ADSTERRA / OTHER NETWORK VERIFICATION TAGS <<<
