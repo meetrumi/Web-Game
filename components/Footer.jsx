@@ -80,11 +80,11 @@ export default function Footer() {
             owners.
           </p>
           <p>
-            Games are embedded from third-party hosts. See our{' '}
+            Games run in your browser from ClickVault pages. Visit our{' '}
             <Link href="/dmca" className="underline hover:text-brand-600">
               DMCA policy
             </Link>{' '}
-            for takedown requests.
+            for rights and takedown requests.
           </p>
         </div>
       </div>
