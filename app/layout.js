@@ -69,16 +69,7 @@ export default function RootLayout({ children }) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashTheme }} />
 
-        {/* Speeds up the first game embed by warming the DNS/TLS handshake for ad networks */}
-        <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-
-        {/* Google AdSense script in <head> for site verification and auto ads */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1621041383720121"
-          crossOrigin="anonymous"
-        />
 
         {/* Google AdSense account verification meta tag */}
         <meta name="google-adsense-account" content="ca-pub-1621041383720121" />
