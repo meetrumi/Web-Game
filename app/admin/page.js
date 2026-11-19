@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 export default function AdminDashboard() {
   const [posts, setPosts] = useState(null)
   const [error, setError] = useState('')
+  const [notice, setNotice] = useState('')
+  const [busy, setBusy] = useState('')
 
   async function load() {
     const res = await fetch('/api/admin/posts', { cache: 'no-store' })
@@ -15,8 +17,18 @@ export default function AdminDashboard() {
 
   async function remove(slug, title) {
     if (!window.confirm(`Delete "${title}"? This cannot be undone from the dashboard.`)) return
-    const res = await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: 'DELETE' })
-    if (!res.ok) setError((await res.json()).error); else load()
+    setBusy(slug); setError(''); setNotice('')
+    try {
+      const res = await fetch(`/api/admin/posts?slug=${encodeURIComponent(slug)}`, { method: 'DELETE' })
+      const json = await res.json().catch(() => ({}))
+      if (!res.ok) throw new Error(json.error || `Delete failed (${res.status})`)
+      setPosts((list) => list.filter((p) => p.slug !== slug))
+      setNotice(`Deleted "${title}". It disappears from the live site after the automatic redeploy (about 1–2 minutes).`)
+    } catch (e) {
+      setError(e.message)
+    } finally {
+      setBusy('')
+    }
   }
 
   async function logout() {
@@ -50,7 +62,8 @@ export default function AdminDashboard() {
         Publishing commits to GitHub and Vercel redeploys automatically. New or edited posts go live in about 1–2 minutes.
       </p>
 
-      {error && <p className="mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</p>}
+      {error && <p className="mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-700">⚠ {error}</p>}
+      {notice && <p className="mt-4 rounded-xl bg-green-50 p-3 text-sm text-green-800">✓ {notice}</p>}
 
       <div className="surface mt-6 overflow-hidden">
         <table className="w-full text-left text-sm">
@@ -71,7 +84,9 @@ export default function AdminDashboard() {
                 <td className="space-x-3 whitespace-nowrap p-3 text-right">
                   {p.status !== 'draft' && <a href={`/blog/${p.slug}`} target="_blank" className="text-ink-500 hover:underline">View</a>}
                   <Link href={`/admin/posts/${p.slug}`} className="text-brand-600 hover:underline">Edit</Link>
-                  <button onClick={() => remove(p.slug, p.title)} className="text-red-600 hover:underline">Delete</button>
+                  <button disabled={busy === p.slug} onClick={() => remove(p.slug, p.title)} className="text-red-600 hover:underline disabled:opacity-50">
+                    {busy === p.slug ? 'Deleting…' : 'Delete'}
+                  </button>
                 </td>
               </tr>
             ))}

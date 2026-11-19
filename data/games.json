@@ -1,5 +1,169 @@
 [
   {
+    "slug": "tower-rush-defense",
+    "title": "Tower Rush Defense",
+    "category": "unblocked",
+    "tags": [
+      "tower-defense",
+      "strategy",
+      "waves"
+    ],
+    "featured": false,
+    "addedAt": "2026-11-20",
+    "shortDescription": "Build and upgrade towers along a winding road to stop waves of monsters reaching your castle gate. Armoured brutes arrive from wave five and a boss every ten waves.",
+    "howToPlay": "Tap or click a + pad beside the road to build a tower for 60 gold, and tap an existing tower to upgrade it (up to level 3). Towers fire automatically at the monster furthest along the road. Kills earn gold and every cleared wave pays a bonus. Press N to call the next wave early.",
+    "about": [
+      "Tower Rush Defense is a compact tower defence game that is easy to start and surprisingly deep. Monsters follow a winding road towards your castle, and your only weapons are the towers you build on the pads beside it.",
+      "Each upgrade increases a tower's range, fire rate and damage, so deciding between building new towers and upgrading existing ones is the heart of the game. Waves grow larger and tougher, with armoured brutes from wave five and a powerful boss every ten waves."
+    ],
+    "tips": [
+      "Build your first towers near the corners, where they can cover two stretches of road.",
+      "Upgrading one tower is often stronger than building two weak ones.",
+      "Save some gold before every tenth wave for the boss.",
+      "A boss reaching the gate costs five lives, so stack firepower near the end of the road."
+    ],
+    "faq": [
+      {
+        "q": "How do I upgrade towers in Tower Rush Defense?",
+        "a": "Tap a tower you have already built. Each upgrade costs more gold but boosts range, speed and damage, up to level 3."
+      },
+      {
+        "q": "What happens when monsters reach the gate?",
+        "a": "You lose a life for each one, or five for a boss. The game ends when you run out of lives."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/tower-rush-defense.svg",
+    "iframeUrl": "/games/tower-rush-defense/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "tank-wars",
+    "title": "Tank Wars",
+    "category": "unblocked",
+    "tags": [
+      "artillery",
+      "strategy",
+      "vs-bot"
+    ],
+    "featured": false,
+    "addedAt": "2026-11-20",
+    "shortDescription": "Turn-based artillery on rolling hills. Set your angle and power, read the wind, and lob shells at the enemy tank — every explosion carves a crater in the ground.",
+    "howToPlay": "On your turn, use ← → to change the barrel angle and ↑ ↓ to set power, then press Space to fire. On a touchscreen or with a mouse, drag back from your tank like a slingshot and release to shoot. Check the wind arrow at the top before every shot.",
+    "about": [
+      "Tank Wars is a classic turn-based artillery game. You and an enemy tank sit on opposite hills and take turns firing shells, adjusting angle and power to account for gravity and a wind that changes every turn.",
+      "Every explosion destroys part of the landscape, so the battlefield changes as the duel goes on. Beat the bot and the next one aims more accurately, which turns a casual game into a real test of judgement over a streak of wins."
+    ],
+    "tips": [
+      "Make one change at a time — adjust either angle or power after a miss, not both.",
+      "Strong wind matters most on high, slow arcs; flatter shots are less affected.",
+      "Craters can shelter your tank, but they can also trap shells aimed at you.",
+      "Watch where the enemy's shells land to judge the wind for your next shot."
+    ],
+    "faq": [
+      {
+        "q": "How does the wind work in Tank Wars?",
+        "a": "Wind pushes shells left or right while they fly. Its strength and direction are shown at the top of the screen and change slightly every turn."
+      },
+      {
+        "q": "Does the bot get harder?",
+        "a": "Yes. Each round you win makes the next enemy aim more accurately."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/tank-wars.svg",
+    "iframeUrl": "/games/tank-wars/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "sky-hopper",
+    "title": "Sky Hopper",
+    "category": "unblocked",
+    "tags": [
+      "platformer",
+      "endless",
+      "jump"
+    ],
+    "featured": true,
+    "addedAt": "2026-11-20",
+    "shortDescription": "Bounce higher and higher on floating platforms. Steer the hopper left and right, catch springs for big launches, and watch out for platforms that slide away or crumble under your feet.",
+    "howToPlay": "The hopper jumps automatically every time it lands — you only steer. Use ← → or A and D on a keyboard, or hold the left or right half of the screen on a phone. Moving off one side of the screen brings you back on the other.",
+    "about": [
+      "Sky Hopper is an endless vertical jumping game inspired by classic doodle-style climbers. Your little hopper bounces automatically, so the entire game is about steering: lining up the next platform, catching springs and avoiding traps as you climb into the sky.",
+      "Green platforms are safe, blue ones slide back and forth, and cracked brown ones break the moment you touch them. Springs launch you far above the screen. The higher you climb, the bigger the gaps and the trickier the platforms become."
+    ],
+    "tips": [
+      "Aim for the middle of platforms so a small misjudgement doesn't send you past the edge.",
+      "Use screen wrapping — sometimes the closest platform is on the other side.",
+      "Cracked platforms break instantly; treat them as background, not as steps.",
+      "Springs are worth a detour, since one launch can be worth several ordinary jumps."
+    ],
+    "faq": [
+      {
+        "q": "How do I control Sky Hopper on a phone?",
+        "a": "Hold your finger on the left half of the screen to move left and on the right half to move right."
+      },
+      {
+        "q": "What do the different platforms do?",
+        "a": "Green platforms are solid, blue ones move sideways, brown cracked ones break when you land, and springs launch you much higher."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/sky-hopper.svg",
+    "iframeUrl": "/games/sky-hopper/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "chicken-road-cross",
+    "title": "Chicken Road Cross",
+    "category": "unblocked",
+    "tags": [
+      "arcade",
+      "crossy",
+      "endless"
+    ],
+    "featured": true,
+    "addedAt": "2026-11-20",
+    "shortDescription": "Help a brave chicken hop across busy roads and rushing rivers. Dodge cars, ride the logs, and keep moving — the screen creeps forward whether you are ready or not.",
+    "howToPlay": "Arrow keys or WASD hop one tile at a time; on a phone, tap to hop forward or swipe in any direction. Cars on the roads end the run, water does too unless you are standing on a log, and the camera keeps creeping up the screen — fall off the bottom and you are left behind.",
+    "about": [
+      "Chicken Road Cross is an endless lane-hopping arcade game in the spirit of classic road-crossing games. Every row is grass, road or river, and each one asks something different: wait for a gap in traffic, time a jump onto a drifting log, or weave between trees on the grass.",
+      "The world is generated as you go, so no two runs are the same, and traffic gets faster the further you get. Every row you reach is a point — and because the screen slowly moves on its own, standing still is never safe for long."
+    ],
+    "tips": [
+      "Watch the lane after the next one, not just the one in front of you.",
+      "On rivers, hop on to a log early and ride it while you plan your next jump.",
+      "Logs carry you sideways — don't let one drift you off the edge of the screen.",
+      "Use grass rows as resting spots, but don't rest so long the screen catches up."
+    ],
+    "faq": [
+      {
+        "q": "How do you score in Chicken Road Cross?",
+        "a": "You score one point for every new row you reach. Your best score is saved in your browser."
+      },
+      {
+        "q": "Can the chicken swim?",
+        "a": "No. On river rows you must land on a log; touching the water ends the run."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/chicken-road-cross.svg",
+    "iframeUrl": "/games/chicken-road-cross/index.html",
+    "plays": 0
+  },
+  {
     "slug": "pixel-dash",
     "title": "Pixel Dash",
     "category": "unblocked",
