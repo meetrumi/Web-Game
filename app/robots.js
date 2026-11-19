@@ -15,6 +15,5 @@ export default function robots() {
       { userAgent: 'AdsBot-Google', allow: '/' },
     ],
     sitemap: absoluteUrl('/sitemap.xml'),
-    host: absoluteUrl('/'),
   }
 }

@@ -2,20 +2,35 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { formatDate, getAllPosts } from '@/lib/posts'
-import { site } from '@/lib/site'
+import { absoluteUrl, site } from '@/lib/site'
 
 export const metadata = {
   title: 'Blog — Guides & Explainers',
   description: `Guides, explainers and deep dives on idle games, clickers and browser gaming from the ${site.name} team.`,
   alternates: { canonical: '/blog' },
+  openGraph: { type: 'website', url: '/blog', title: 'Blog — Guides & Explainers' },
 }
 
 export default function BlogIndexPage() {
   const posts = getAllPosts()
   const [lead, ...rest] = posts
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: `${site.name} Blog`,
+    url: absoluteUrl('/blog'),
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: absoluteUrl(`/blog/${post.slug}`),
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt || post.publishedAt,
+    })),
+  }
 
   return (
     <div className="container-page py-8 sm:py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog' }]} />
 
       <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl dark:text-white">
@@ -34,7 +49,7 @@ export default function BlogIndexPage() {
           <div className="relative aspect-[16/10] bg-ink-100 sm:aspect-auto sm:h-full dark:bg-ink-800">
             <Image
               src={lead.hero}
-              alt=""
+              alt={lead.heroAlt || lead.title}
               fill
               priority
               sizes="(min-width: 640px) 50vw, 100vw"
@@ -68,7 +83,7 @@ export default function BlogIndexPage() {
               <div className="relative aspect-[16/9] bg-ink-100 dark:bg-ink-800">
                 <Image
                   src={post.hero}
-                  alt=""
+                  alt={post.heroAlt || post.title}
                   fill
                   loading="lazy"
                   sizes="(min-width: 640px) 50vw, 100vw"

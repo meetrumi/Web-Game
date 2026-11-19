@@ -41,6 +41,7 @@ export function generateMetadata({ params }) {
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     authors: [{ name: post.author }],
+    keywords: post.keywords?.length ? post.keywords : undefined,
     openGraph: {
       type: 'article',
       title: post.title,
@@ -48,13 +49,13 @@ export function generateMetadata({ params }) {
       url: absoluteUrl(`/blog/${post.slug}`),
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
-      images: [{ url: post.hero, width: 1200, height: 630, alt: post.title }],
+      ...(post.hero.endsWith('.svg') ? {} : { images: [{ url: post.hero, alt: post.heroAlt || post.title }] }),
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [post.hero],
+      ...(post.hero.endsWith('.svg') ? {} : { images: [post.hero] }),
     },
   }
 }
@@ -75,7 +76,10 @@ export default function BlogPostPage({ params }) {
       description: post.description,
       image: absoluteUrl(post.hero),
       datePublished: post.publishedAt,
-      dateModified: post.updatedAt,
+      dateModified: post.updatedAt || post.publishedAt,
+      wordCount: [...post.intro, ...post.sections.flatMap((s) => [...s.paragraphs, ...(s.list || [])])].join(' ').split(/\s+/).length,
+      keywords: post.keywords?.join(', ') || undefined,
+      inLanguage: 'en',
       author: { '@type': 'Organization', name: post.author },
       publisher: { '@type': 'Organization', name: site.name, url: site.url },
       mainEntityOfPage: {
@@ -83,7 +87,7 @@ export default function BlogPostPage({ params }) {
         '@id': absoluteUrl(`/blog/${post.slug}`),
       },
     },
-    {
+    post.faq?.length > 0 && {
       // FAQPage markup makes the FAQ block eligible for rich results.
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -93,7 +97,7 @@ export default function BlogPostPage({ params }) {
         acceptedAnswer: { '@type': 'Answer', text: item.a },
       })),
     },
-  ]
+  ].filter(Boolean)
 
   return (
     <div className="container-page py-8 sm:py-10">
@@ -106,7 +110,7 @@ export default function BlogPostPage({ params }) {
         items={[
           { label: 'Home', href: '/' },
           { label: 'Blog', href: '/blog' },
-          { label: post.category },
+          { label: post.title },
         ]}
       />
 
@@ -142,7 +146,7 @@ export default function BlogPostPage({ params }) {
             <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl bg-ink-100 dark:bg-ink-800">
               <Image
                 src={post.hero}
-                alt=""
+                alt={post.heroAlt || post.title}
                 fill
                 priority
                 sizes="(min-width: 1024px) 760px, 100vw"
@@ -181,12 +185,12 @@ export default function BlogPostPage({ params }) {
                   </a>
                 </li>
               ))}
-              <li className="flex gap-2">
+              {post.faq?.length > 0 && <li className="flex gap-2">
                 <span className="text-ink-300">{post.sections.length + 1}.</span>
                 <a href="#faq" className="text-brand-600 hover:underline dark:text-brand-300">
                   Frequently asked questions
                 </a>
-              </li>
+              </li>}
             </ol>
           </nav>
 
@@ -229,6 +233,7 @@ export default function BlogPostPage({ params }) {
           ))}
 
           {/* ---- FAQ BLOCK (matches the FAQPage JSON-LD above) ---- */}
+          {post.faq?.length > 0 && (
           <section id="faq" className="mt-12 scroll-mt-24">
             <h2 className="text-2xl font-extrabold tracking-tight text-ink-900 dark:text-white">
               Frequently asked questions
@@ -255,6 +260,7 @@ export default function BlogPostPage({ params }) {
               ))}
             </div>
           </section>
+          )}
 
           {/* ---- Play-now block: sends article traffic into the game pages ---- */}
           {relatedGames.length > 0 && (

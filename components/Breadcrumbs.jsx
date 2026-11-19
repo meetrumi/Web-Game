@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { absoluteUrl } from '@/lib/site'
 
 /** Breadcrumb trail + matching BreadcrumbList JSON-LD for rich results. */
 export default function Breadcrumbs({ items = [] }) {
@@ -9,7 +10,7 @@ export default function Breadcrumbs({ items = [] }) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      ...(item.href ? { item: item.href } : {}),
+      ...(item.href ? { item: absoluteUrl(item.href) } : {}),
     })),
   }
 

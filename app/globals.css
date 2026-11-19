@@ -45,6 +45,12 @@
       text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60;
   }
 
+  .admin-input {
+    @apply block w-full rounded-xl border border-ink-200 bg-white px-3 py-2 text-sm text-ink-900
+      focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30
+      dark:border-ink-700 dark:bg-ink-800 dark:text-white;
+  }
+
   .btn-primary {
     @apply btn bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800;
   }

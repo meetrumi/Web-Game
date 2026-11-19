@@ -21,7 +21,6 @@ export const metadata = {
     'no download games',
     'html5 games',
   ],
-  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     siteName: site.name,
@@ -80,6 +79,19 @@ export default function RootLayout({ children }) {
         {/* <meta name="adsterra-site-verification" content="XXXXXXXX" /> */}
       </head>
       <body className="flex min-h-screen flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: site.name,
+              url: site.url,
+              logo: `${site.url}/icon.svg`,
+              email: site.contactEmail,
+            }),
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50
