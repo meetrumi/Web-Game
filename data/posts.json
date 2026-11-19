@@ -1,5 +1,260 @@
 [
   {
+    "slug": "cookie-clicker-alternatives-unblocked",
+    "title": "7 Free Cookie Clicker Alternatives You Can Play in Your Browser",
+    "description": "Love cookie clicker games? Here are 7 free idle clicker alternatives that run in a browser tab with no download — with tips on which to play first.",
+    "excerpt": "If you like watching a cookie counter climb, these seven browser-based idle clickers scratch the same itch — each with one mechanic that makes it different.",
+    "category": "Guides",
+    "author": "ClickVault Editorial",
+    "status": "published",
+    "publishedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "hero": "/thumbs/cookie-empire-tycoon.svg",
+    "heroAlt": "Cookie Empire Tycoon idle clicker game thumbnail",
+    "keywords": [
+      "cookie clicker alternatives",
+      "cookie clicker unblocked",
+      "idle clicker games",
+      "games like cookie clicker"
+    ],
+    "relatedGames": [
+      "cookie-empire-tycoon",
+      "crystal-tap-tycoon",
+      "capybara-coin-farm",
+      "burger-baron-idle"
+    ],
+    "intro": [
+      "Cookie clicker games are built on a simple loop: click for a few units, buy something that earns for you, and watch the numbers grow faster than you could ever click. Once you are hooked on that loop, it is natural to want more of it.",
+      "Every game below is free, runs in a normal browser tab on a Chromebook, laptop or phone, and saves progress in your browser. Each one takes the classic clicker formula and adds a single twist, so you can pick the one that matches how you like to play."
+    ],
+    "sections": [
+      {
+        "heading": "What makes a good cookie clicker alternative",
+        "paragraphs": [
+          "The best idle clickers share three things: an early game that rewards active clicking, a middle game where automation takes over, and a prestige reset that makes the next run faster. If a game nails all three, it will hold your attention for weeks.",
+          "We also looked for games that respect your time. All of the picks below keep earning while you are away and let you pick up exactly where you left off."
+        ]
+      },
+      {
+        "heading": "1. Cookie Empire Tycoon — the closest match",
+        "paragraphs": [
+          "If you want the classic experience, start here. You click one cookie, hire Grandmas, and work your way up through farms, refineries and ovens to an Orbital bakery. A golden cookie occasionally appears and makes taps worth seven times as much for ten seconds.",
+          "The Franchise reset is the long-term hook: trade your bakery for a permanent multiplier and every new run moves faster."
+        ]
+      },
+      {
+        "heading": "2. Crystal Tap Tycoon — best for short sessions",
+        "paragraphs": [
+          "Crystal Tap Tycoon rewards rhythm. Tap within 1.2 seconds of your last tap to build a combo worth up to eight and a half times a normal click. Upgrades are cheap and the prestige bar is low, so you see real progress in a five-minute break."
+        ]
+      },
+      {
+        "heading": "3. Capybara Coin Farm — the relaxing one",
+        "paragraphs": [
+          "If clicker games sometimes feel stressful, Capybara Coin Farm is the antidote. Petting capybaras fills a contentment meter that multiplies your income, and when you walk away it simply drifts back to normal. There is no way to fail."
+        ]
+      },
+      {
+        "heading": "4. Burger Baron Idle — for planners",
+        "paragraphs": [
+          "Burger Baron Idle adds a small decision to every session. Order tickets pile up on the counter: leave them and passive income rises, or serve them by hand for a payout worth four flips. It suits players who like optimising rather than just clicking."
+        ]
+      },
+      {
+        "heading": "5 to 7. Three more worth trying",
+        "paragraphs": [
+          "Once you have played the four above, these three each bring their own system to the clicker formula:"
+        ],
+        "list": [
+          "Idle Mine Shaft — dig deeper for richer ore and hit a bonus seam every 250 metres.",
+          "Click Kingdom — an RPG twist where every tap is a sword swing and every defeated foe pays a bounty.",
+          "Idle Space Colony — balance a shared power grid so your colony never browns out."
+        ]
+      },
+      {
+        "heading": "Which one should you play first?",
+        "paragraphs": [
+          "Start with Cookie Empire Tycoon if you want the familiar experience, Crystal Tap Tycoon if you only have a few minutes, and Capybara Coin Farm if you want something calm. All of them are in our idle and clicker collection, and you can switch between them freely because each game keeps its own save."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are these cookie clicker alternatives free?",
+        "a": "Yes. Every game listed is free to play in your browser with no download, account or in-game purchases."
+      },
+      {
+        "q": "Do these games work on a school Chromebook?",
+        "a": "They are lightweight HTML5 games that run in a standard Chrome tab, so they work on Chromebooks as long as your network allows the site."
+      },
+      {
+        "q": "Will I lose my progress if I close the tab?",
+        "a": "No. Progress is saved in your browser, and the games bank part of your income while you are away for up to four hours."
+      }
+    ],
+    "readingMinutes": 2
+  },
+  {
+    "slug": "idle-game-prestige-explained",
+    "title": "What Is Prestige in Idle Games? When to Reset (Beginner's Guide)",
+    "description": "Prestige resets explained simply: what prestige does in idle and clicker games, why resetting makes you faster, and exactly when to hit the button.",
+    "excerpt": "Resetting all your progress on purpose sounds backwards. Here is why prestige is the most important button in any idle game — and how to know when to press it.",
+    "category": "Explainers",
+    "author": "ClickVault Editorial",
+    "status": "published",
+    "publishedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "hero": "/thumbs/blog-idle-math.svg",
+    "heroAlt": "Illustration of idle game numbers growing after a prestige reset",
+    "keywords": [
+      "idle game prestige",
+      "what is prestige in idle games",
+      "when to prestige",
+      "clicker game reset"
+    ],
+    "relatedGames": [
+      "crystal-tap-tycoon",
+      "cookie-empire-tycoon",
+      "idle-space-colony"
+    ],
+    "intro": [
+      "Almost every idle or clicker game eventually offers you a strange deal: give up everything you have built, and in return get a permanent bonus. This is called prestige, and it is the single biggest factor in how fast you progress.",
+      "This guide explains what prestige actually does, why it works, and a simple rule for deciding when to reset."
+    ],
+    "sections": [
+      {
+        "heading": "What prestige means in an idle game",
+        "paragraphs": [
+          "Prestige is a voluntary reset. Your currency, producers and upgrades go back to zero, but you keep a permanent multiplier that boosts everything you earn in the next run. Different games give it different names — Franchise, Rebirth, New shaft, Jump system or Resonate — but the idea is always the same.",
+          "In the games on ClickVault, each prestige level adds a flat bonus to all income, and the amount you need to earn before the next prestige grows each time."
+        ]
+      },
+      {
+        "heading": "Why resetting makes you faster",
+        "paragraphs": [
+          "Idle game costs grow exponentially: each extra producer costs a bit more than the last. Eventually your income cannot keep up and progress slows to a crawl. That slowdown is the signal.",
+          "After a prestige your multiplier lets you race back through the early game in a fraction of the time, and you end up further ahead than where you stopped. Players who never prestige usually stall; players who reset at the right moment keep accelerating."
+        ]
+      },
+      {
+        "heading": "When should you prestige?",
+        "paragraphs": [
+          "A good rule of thumb is to reset when the next meaningful purchase would take you longer than it took to reach your current point after the last reset. In practice that usually means:"
+        ],
+        "list": [
+          "Your next producer or upgrade is more than a few minutes away.",
+          "You have unlocked the prestige button and the bonus is noticeably bigger than your current one.",
+          "Active clicking no longer makes a visible difference to your income."
+        ]
+      },
+      {
+        "heading": "Common prestige mistakes",
+        "paragraphs": [
+          "The most common mistake is waiting too long. Holding on for one more upgrade can cost far more time than the reset would have saved. The second is resetting too early, before the bonus is large enough to matter.",
+          "Games with a low prestige bar, such as Crystal Tap Tycoon, are a great place to practise because you can reset several times in one session and feel the difference immediately."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I lose everything when I prestige?",
+        "a": "You lose your current currency, producers and upgrades, but keep a permanent multiplier that makes every future run faster."
+      },
+      {
+        "q": "Is it ever bad to prestige?",
+        "a": "Only if the bonus is too small to make up for the progress you give up. If the game shows the reward, reset once it clearly beats your current multiplier."
+      },
+      {
+        "q": "Which ClickVault game is best for learning prestige?",
+        "a": "Crystal Tap Tycoon has the lowest prestige bar, so you can try several resets in a single short session."
+      }
+    ],
+    "readingMinutes": 2
+  },
+  {
+    "slug": "quick-browser-games-for-short-breaks",
+    "title": "8 Quick Browser Games for a 5-Minute Break (No Download)",
+    "description": "Short on time? These 8 free browser games load instantly and are perfect for a five-minute break — arcade, puzzle, sports and idle picks, no download needed.",
+    "excerpt": "Not every break is long enough for a proper game. These eight load in seconds, play in short rounds, and are easy to put down when the timer runs out.",
+    "category": "Guides",
+    "author": "ClickVault Editorial",
+    "status": "published",
+    "publishedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "hero": "/thumbs/hoop-streak.svg",
+    "heroAlt": "Hoop Streak basketball browser game thumbnail",
+    "keywords": [
+      "quick browser games",
+      "games for a 5 minute break",
+      "short online games",
+      "free games no download"
+    ],
+    "relatedGames": [
+      "hoop-streak",
+      "stack-tower-rush",
+      "pixel-dash",
+      "neon-snake",
+      "crystal-tap-tycoon"
+    ],
+    "intro": [
+      "Sometimes you have five minutes — between classes, during lunch, or while something loads. The worst use of that time is waiting for a big game to download or sitting through a tutorial.",
+      "Every game here starts in a couple of seconds, plays in short rounds and runs in any modern browser. We have grouped them by what kind of break you are taking."
+    ],
+    "sections": [
+      {
+        "heading": "If you have exactly one minute",
+        "paragraphs": [
+          "Hoop Streak is built for this. Each round lasts sixty seconds: drag to shoot, keep your streak going, and try to beat your best score before the clock runs out. Stack Tower Rush is just as quick — a single button, one tower, and a run that rarely lasts longer than a minute."
+        ]
+      },
+      {
+        "heading": "If you want a reflex test",
+        "paragraphs": [
+          "Pixel Dash and Slope Runner X are endless runners that get faster the longer you survive. Neon Snake brings back the classic snake game with speed jumps every ten pellets. All three are easy to restart instantly when you crash."
+        ]
+      },
+      {
+        "heading": "If you want something to think about",
+        "paragraphs": [
+          "Bubble Blaster Arena rewards planning: bank shots off the walls and knock down whole clusters for bonus points. Tank Duel Arena is a short one-on-one battle where reading your opponent matters more than speed."
+        ]
+      },
+      {
+        "heading": "If you want progress without effort",
+        "paragraphs": [
+          "Idle games are perfect for short breaks because they keep working when you leave. Crystal Tap Tycoon is designed for quick sessions, and all of our idle games bank income while the tab is closed so each check-in feels rewarding."
+        ]
+      },
+      {
+        "heading": "Quick picks at a glance",
+        "paragraphs": [
+          "Choose based on how long you have:"
+        ],
+        "list": [
+          "1 minute: Hoop Streak, Stack Tower Rush",
+          "2–3 minutes: Pixel Dash, Neon Snake, Slope Runner X",
+          "5 minutes: Bubble Blaster Arena, Tank Duel Arena",
+          "Any time: Crystal Tap Tycoon or any idle game"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do these games need a download?",
+        "a": "No. They are HTML5 games that run directly in your browser tab on computers, Chromebooks, tablets and phones."
+      },
+      {
+        "q": "Are the games free?",
+        "a": "Yes, every game on ClickVault is free to play with no account required."
+      },
+      {
+        "q": "Which game is the quickest to play?",
+        "a": "Hoop Streak, because every round is exactly sixty seconds long."
+      }
+    ],
+    "readingMinutes": 1
+  },
+  {
     "slug": "best-unblocked-idle-games",
     "title": "12 Best Unblocked Idle Games You Can Actually Play on a School Chromebook",
     "description": "A hand-tested list of the best unblocked idle and clicker games that run in a browser tab with no downloads, no installs and no launcher.",
@@ -10,7 +265,11 @@
     "updatedAt": "2026-08-29",
     "readingMinutes": 7,
     "hero": "/thumbs/blog-best-idle.svg",
-    "relatedGames": ["cookie-empire-tycoon", "idle-mine-shaft", "capybara-coin-farm"],
+    "relatedGames": [
+      "cookie-empire-tycoon",
+      "idle-mine-shaft",
+      "capybara-coin-farm"
+    ],
     "intro": [
       "Idle games are the one genre that genuinely suits a locked-down school or office machine. They are small, they run in a single browser tab, and they are designed to keep earning while you are looking at something else entirely.",
       "We loaded every game below on a stock managed Chromebook with no extensions, no sideloading and no developer mode. If a game needed a plugin, a download or a login wall, it did not make the list."
@@ -87,7 +346,11 @@
     "updatedAt": "2026-11-08",
     "readingMinutes": 8,
     "hero": "/thumbs/blog-idle-math.svg",
-    "relatedGames": ["click-kingdom", "crystal-tap-tycoon", "burger-baron-idle"],
+    "relatedGames": [
+      "click-kingdom",
+      "crystal-tap-tycoon",
+      "burger-baron-idle"
+    ],
     "intro": [
       "Idle games feel generous at the start and grinding later, and that shift is not an accident. It falls out of one design decision: costs grow geometrically while income grows linearly until you buy your way out of it.",
       "Understanding the three formulas underneath the genre takes about ten minutes and permanently changes how you play. You stop buying the upgrade that is in front of you and start buying the one that resets the curve."
@@ -164,7 +427,11 @@
     "updatedAt": "2026-08-18",
     "readingMinutes": 6,
     "hero": "/thumbs/blog-unblocked.svg",
-    "relatedGames": ["pixel-dash", "slope-runner-x", "tank-duel-arena"],
+    "relatedGames": [
+      "pixel-dash",
+      "slope-runner-x",
+      "tank-duel-arena"
+    ],
     "intro": [
       "The word unblocked has drifted a long way from anything technical. It started as a description of a specific situation and is now mostly a search term, which is why so many sites promising unblocked games do not load on the network you actually care about.",
       "Here is what is really happening between your browser and the game, and why the answer is different on every network."

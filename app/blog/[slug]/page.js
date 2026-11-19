@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import GameCard from '@/components/GameCard'
 import AdSlot from '@/components/ads/AdSlot'
+import LinkedText from '@/components/LinkedText'
 import { getGamesBySlugs } from '@/lib/games'
 import {
   formatDate,
@@ -159,7 +160,7 @@ export default function BlogPostPage({ params }) {
           <div className="prose-article mt-7 text-[1.125rem] leading-relaxed">
             {post.intro.map((paragraph, index) => (
               <p key={index} className={index === 0 ? 'font-medium text-ink-800 dark:text-ink-100' : ''}>
-                {paragraph}
+                <LinkedText text={paragraph} />
               </p>
             ))}
           </div>
@@ -203,7 +204,7 @@ export default function BlogPostPage({ params }) {
 
               <div className="prose-article mt-3">
                 {section.paragraphs.map((paragraph, pIndex) => (
-                  <p key={pIndex}>{paragraph}</p>
+                  <p key={pIndex}><LinkedText text={paragraph} /></p>
                 ))}
               </div>
 
@@ -215,7 +216,7 @@ export default function BlogPostPage({ params }) {
                         className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500"
                         aria-hidden="true"
                       />
-                      <span>{item}</span>
+                      <span><LinkedText text={item} /></span>
                     </li>
                   ))}
                 </ul>

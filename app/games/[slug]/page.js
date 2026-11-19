@@ -7,13 +7,13 @@ import GameGrid from '@/components/GameGrid'
 import SectionHeading from '@/components/SectionHeading'
 import AdsterraSocialBar from '@/components/ads/AdsterraSocialBar'
 import {
-  formatPlays,
   getAllGames,
   getCategory,
   getGameBySlug,
   getRelatedGames,
 } from '@/lib/games'
-import { absoluteUrl, site } from '@/lib/site'
+import { absoluteUrl, monetisation, site } from '@/lib/site'
+import { getAllPosts } from '@/lib/posts'
 
 /** Pre-renders one static page per game at build time. */
 export function generateStaticParams() {
@@ -25,7 +25,8 @@ export function generateMetadata({ params }) {
   if (!game) return { title: 'Game not found' }
 
   const category = getCategory(game.category)
-  const title = `${game.title} — Play Free ${category?.name ?? ''} Game`.trim()
+  // Lead with the searched phrase ("<game> unblocked") — it is what players type.
+  const title = `${game.title} Unblocked — Play Free Online`
 
   return {
     title,
@@ -54,6 +55,19 @@ export default function GamePage({ params }) {
   const category = getCategory(game.category)
   const related = getRelatedGames(game.slug, 8)
   const isIdle = game.category === 'idle-clicker'
+  const guides = getAllPosts().filter((p) => p.relatedGames?.includes(game.slug)).slice(0, 3)
+
+  const faqLd = game.faq?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: game.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -77,7 +91,7 @@ export default function GamePage({ params }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd ? [jsonLd, faqLd] : jsonLd) }}
       />
 
       {/*
@@ -107,6 +121,7 @@ export default function GamePage({ params }) {
 
         {/* Directly under the frame: the smart-link CTA. First-party styling, on
             the accent ramp, `rel="sponsored"` set in the component. */}
+        {monetisation.smartlinkUrl && (
         <div className="mt-4 flex flex-col gap-4 rounded-2xl border border-accent-400/40
           bg-accent-400/10 p-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
@@ -120,6 +135,7 @@ export default function GamePage({ params }) {
           {/* >>> PLUG IN: destination is NEXT_PUBLIC_SMARTLINK_URL in .env.local <<< */}
           <ClaimBonusButton className="shrink-0" />
         </div>
+        )}
 
         {/* Title + short description, below the frame as specified. */}
         <div className="mt-7 flex flex-wrap items-center gap-2">
@@ -139,7 +155,7 @@ export default function GamePage({ params }) {
         </h1>
 
         <p className="mt-1.5 text-xs text-ink-400">
-          {formatPlays(game.plays)} plays · added{' '}
+          Free to play · no download · added{' '}
           {new Date(game.addedAt).toLocaleDateString('en-GB', {
             month: 'long',
             year: 'numeric',
@@ -153,13 +169,7 @@ export default function GamePage({ params }) {
             <h2 className="text-sm font-bold uppercase tracking-wider text-ink-400">
               How to play
             </h2>
-            {/* >>> PLUG IN: add a `controls` array per game in data/games.json and
-                render it here instead of this generic copy. <<< */}
-            <p className="prose-article mt-2 text-[15px]">
-              {isIdle
-                ? 'Click or tap the main resource to earn your first units, then spend them on the cheapest producer. Once passive income outpaces manual clicking, stop clicking and start planning upgrades.'
-                : 'Use the arrow keys or WASD to move and the space bar to act. On mobile, tap and swipe anywhere on the game area.'}
-            </p>
+            <p className="prose-article mt-2 text-[15px]">{game.howToPlay}</p>
           </div>
           <div className="surface p-5">
             <h2 className="text-sm font-bold uppercase tracking-wider text-ink-400">
@@ -184,6 +194,68 @@ export default function GamePage({ params }) {
             </dl>
           </div>
         </div>
+
+        {game.about?.length > 0 && (
+          <section className="mt-10 max-w-3xl">
+            <h2 className="text-xl font-extrabold tracking-tight text-ink-900 dark:text-white">
+              About {game.title}
+            </h2>
+            <div className="prose-article mt-3">
+              {game.about.map((para, i) => <p key={i}>{para}</p>)}
+            </div>
+          </section>
+        )}
+
+        {game.tips?.length > 0 && (
+          <section className="mt-8 max-w-3xl">
+            <h2 className="text-xl font-extrabold tracking-tight text-ink-900 dark:text-white">
+              {game.title} tips and strategy
+            </h2>
+            <ul className="prose-article mt-3 space-y-2">
+              {game.tips.map((tip, i) => (
+                <li key={i} className="flex gap-2.5">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden="true" />
+                  <span>{tip}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {game.faq?.length > 0 && (
+          <section className="mt-8 max-w-3xl">
+            <h2 className="text-xl font-extrabold tracking-tight text-ink-900 dark:text-white">
+              {game.title} FAQ
+            </h2>
+            <div className="mt-3 divide-y divide-ink-200 overflow-hidden rounded-2xl border border-ink-200 dark:divide-ink-800 dark:border-ink-800">
+              {game.faq.map((f, i) => (
+                <details key={i} className="group bg-white open:bg-ink-50 dark:bg-ink-900 dark:open:bg-ink-800/60">
+                  <summary className="cursor-pointer list-none p-4 font-semibold text-ink-900 dark:text-white">
+                    <h3 className="text-base">{f.q}</h3>
+                  </summary>
+                  <p className="prose-article px-4 pb-4 text-[15px]">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {guides.length > 0 && (
+          <section className="mt-8 max-w-3xl">
+            <h2 className="text-xl font-extrabold tracking-tight text-ink-900 dark:text-white">
+              Guides featuring {game.title}
+            </h2>
+            <ul className="mt-3 space-y-2">
+              {guides.map((p) => (
+                <li key={p.slug}>
+                  <Link href={`/blog/${p.slug}`} className="font-semibold text-brand-600 hover:underline dark:text-brand-300">
+                    {p.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* ================================================================
           *  FIRST AD-SAFE ZONE ON THIS PAGE

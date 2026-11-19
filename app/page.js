@@ -63,7 +63,7 @@ export default function HomePage() {
           <SectionHeading
             as="h2"
             title="Most played"
-            blurb="Ranked by total plays across the site."
+            blurb="Player favourites — a good place to start."
             href="/games"
           />
           <GameGrid games={popular} />

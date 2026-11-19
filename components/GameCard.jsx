@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { formatPlays, getCategoryName } from '@/lib/games'
+import { getCategoryName } from '@/lib/games'
 
 /**
  * Game card: thumbnail, title, category tag, play icon on hover.
@@ -63,11 +63,7 @@ export default function GameCard({ game, priority = false, className = '' }) {
           {game.shortDescription}
         </p>
         <div className="mt-auto flex items-center gap-1.5 pt-3 text-[11px] font-medium text-ink-400">
-          <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" />
-            <circle cx="12" cy="12" r="2.5" />
-          </svg>
-          {formatPlays(game.plays)} plays
+          Free · No download
         </div>
       </div>
     </Link>

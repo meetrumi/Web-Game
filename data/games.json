@@ -6,11 +6,39 @@
     "thumbnail": "/thumbs/pixel-dash.svg",
     "iframeUrl": "/games/pixel-dash/index.html",
     "shortDescription": "An endless runner with two inputs and no brakes. Jump the blocks and the gaps, duck under the saw blades, and see how far you get before it outruns your reflexes.",
-    "tags": ["runner", "arcade", "endless"],
+    "tags": [
+      "runner",
+      "arcade",
+      "endless"
+    ],
     "howToPlay": "Space or a tap jumps; hold ↓ (or hold a finger on the lower third of the screen) to duck. Blocks and gaps you jump, saw blades you duck under — a blade sits too low to jump and too high to run through.",
     "featured": true,
     "plays": 184320,
-    "addedAt": "2026-08-02"
+    "addedAt": "2026-08-02",
+    "about": [
+      "Pixel Dash is a fast endless runner built around just two moves. Your runner never stops, so every second is a decision: jump the block, clear the gap, or drop low before a saw blade sweeps through at head height.",
+      "The course is generated as you go and the pace climbs the further you get, which keeps every run short, tense and easy to restart. It is the kind of game you play for thirty seconds and then, somehow, for twenty minutes."
+    ],
+    "tips": [
+      "Watch the height of each hazard, not just its position — saw blades are always a duck, never a jump.",
+      "Jump a fraction late on blocks; early jumps land you on top of the next obstacle.",
+      "On a phone, rest a thumb on the lower third of the screen so ducking is instant.",
+      "Your best runs come from rhythm — stop reacting to single obstacles and read the next two."
+    ],
+    "faq": [
+      {
+        "q": "How do you duck in Pixel Dash?",
+        "a": "Hold the down arrow on a keyboard, or hold a finger on the lower third of the screen on a phone or tablet."
+      },
+      {
+        "q": "Does Pixel Dash get harder?",
+        "a": "Yes. The speed increases steadily with distance, so obstacles arrive closer together the longer you survive."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "stack-tower-rush",
@@ -19,11 +47,39 @@
     "thumbnail": "/thumbs/stack-tower-rush.svg",
     "iframeUrl": "/games/stack-tower-rush/index.html",
     "shortDescription": "Tap at exactly the right moment to drop each block dead centre. Perfect stacks stay wide, sloppy ones shave your tower down to a toothpick.",
-    "tags": ["timing", "casual", "high-score"],
+    "tags": [
+      "timing",
+      "casual",
+      "high-score"
+    ],
     "howToPlay": "One input: Space or a tap drops the sliding block. Anything hanging over the edge is sliced off and the next block is that much narrower, so land them centred. A perfect drop is forgiven entirely and widens your margin back.",
     "featured": true,
     "plays": 152880,
-    "addedAt": "2026-07-28"
+    "addedAt": "2026-07-28",
+    "about": [
+      "Stack Tower Rush is a one-button timing game. A block slides back and forth above your tower and you drop it with a single tap — land it centred and the tower stays wide, miss and the overhang is sliced away for good.",
+      "Every mistake makes the next drop harder because there is less tower to land on, while a perfect drop restores some of the width you lost. It is a pure test of timing and nerve, and runs perfectly on a school Chromebook."
+    ],
+    "tips": [
+      "Tap on the rhythm of the slide, not when the block looks lined up — your reaction delay is part of the timing.",
+      "Chase perfect drops early, while the tower is wide; they rebuild margin you will need later.",
+      "If the block speeds up, shorten your look-ahead and focus only on the near edge.",
+      "Take a breath after a bad drop — players lose more towers rushing the recovery than the mistake itself."
+    ],
+    "faq": [
+      {
+        "q": "What counts as a perfect drop?",
+        "a": "A block that lands almost exactly on top of the one below. Perfect drops cut nothing off and widen your margin back."
+      },
+      {
+        "q": "What ends a run?",
+        "a": "Missing the tower completely. Each sloppy drop shrinks the tower until there is nothing left to land on."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "drift-alley",
@@ -32,11 +88,39 @@
     "thumbnail": "/thumbs/drift-alley.svg",
     "iframeUrl": "/games/drift-alley/index.html",
     "shortDescription": "Hold one key to drift, release to grip. Slide through an apex to grow your chain, arrive straight and lose it, and clip a wall to end the run.",
-    "tags": ["racing", "drift", "arcade"],
+    "tags": [
+      "racing",
+      "drift",
+      "arcade"
+    ],
     "howToPlay": "←→ steers, Space holds a drift; on a phone, hold anywhere and slide left or right. Sliding through a corner builds your chain — arrive straight and you lose it, clip a wall and the run is over.",
     "featured": false,
     "plays": 98440,
-    "addedAt": "2026-07-19"
+    "addedAt": "2026-07-19",
+    "about": [
+      "Drift Alley is an arcade drifting game where the whole skill is knowing when to let the back end go. Hold to slide, release to grip, and string corners together to grow a drift chain that multiplies your score.",
+      "Arrive at a corner straight and your chain resets; touch a wall and the run ends. It rewards smooth, committed lines over raw speed, which makes it easy to learn and surprisingly hard to master."
+    ],
+    "tips": [
+      "Start the drift before the corner, not in it — late slides send you wide into the wall.",
+      "Release early to straighten out; holding too long is the most common way to clip the outside.",
+      "Small steering inputs keep the chain alive better than big corrections.",
+      "Learn one stretch of track at a time and repeat it until the line feels automatic."
+    ],
+    "faq": [
+      {
+        "q": "How do I drift on mobile?",
+        "a": "Hold anywhere on the screen to drift and slide your finger left or right to steer. Lift your finger to grip again."
+      },
+      {
+        "q": "How do drift chains work?",
+        "a": "Each corner you slide through adds to your chain and raises the score multiplier. Arriving at a corner without drifting breaks the chain."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "neon-snake",
@@ -45,11 +129,39 @@
     "thumbnail": "/thumbs/neon-snake.svg",
     "iframeUrl": "/games/neon-snake/index.html",
     "shortDescription": "The classic snake loop with a glow-up: speed ramps every ten pellets, and the lit gap in the middle of each wall wraps you across — everything else is solid.",
-    "tags": ["classic", "arcade", "reflex"],
+    "tags": [
+      "classic",
+      "arcade",
+      "reflex"
+    ],
     "howToPlay": "Arrows, WASD or a swipe turns. Speed steps up every ten pellets. Only the lit gap in the middle of each wall wraps you through to the other side — the rest of the wall, and your own tail, ends the run.",
     "featured": false,
     "plays": 143110,
-    "addedAt": "2026-07-11"
+    "addedAt": "2026-07-11",
+    "about": [
+      "Neon Snake is the classic snake game with a glowing makeover and one important twist. Eat pellets to grow, avoid your own tail, and use the lit gap in the centre of each wall to wrap across to the other side of the board.",
+      "The snake speeds up every ten pellets, so the calm opening quickly turns into a reflex test. Because only the gaps wrap, the walls still matter — every route through the board has to be planned around them."
+    ],
+    "tips": [
+      "Use the wall gaps to escape when your tail starts boxing you in.",
+      "Keep long, sweeping paths along the edges rather than zig-zagging through the middle.",
+      "Plan your next two turns before the speed steps up at each ten-pellet mark.",
+      "Swipes register best when short and decisive on a touchscreen."
+    ],
+    "faq": [
+      {
+        "q": "Can I go through the walls in Neon Snake?",
+        "a": "Only through the glowing gap in the middle of each wall. Hitting any other part of the wall ends the run."
+      },
+      {
+        "q": "When does the snake get faster?",
+        "a": "The speed steps up every time you eat ten pellets."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "hoop-streak",
@@ -58,11 +170,39 @@
     "thumbnail": "/thumbs/hoop-streak.svg",
     "iframeUrl": "/games/hoop-streak/index.html",
     "shortDescription": "Drag, release, sink the shot, keep the streak alive. You get sixty seconds, and the hoop starts sliding at ten baskets — then stops being polite at twenty-five.",
-    "tags": ["sports", "basketball", "high-score"],
+    "tags": [
+      "sports",
+      "basketball",
+      "high-score"
+    ],
     "howToPlay": "Drag away from the ball and let go — the direction sets the arc, the distance sets the power. Or use ←→ for angle, ↑↓ for power, Space to shoot. Sixty seconds; nothing but net pays a bonus and every make in a row is worth more than the last.",
     "featured": false,
     "plays": 76210,
-    "addedAt": "2026-07-04"
+    "addedAt": "2026-07-04",
+    "about": [
+      "Hoop Streak is a sixty-second basketball shooting game. Drag back from the ball to set the angle and power, release, and try to keep your streak alive — every basket in a row is worth more than the last.",
+      "After ten baskets the hoop starts to slide, and after twenty-five it moves faster and less predictably. Clean swishes pay a bonus, so the best scores come from consistent, controlled shots rather than hopeful long throws."
+    ],
+    "tips": [
+      "Find one drag distance that sinks a shot and repeat it — consistency builds the streak.",
+      "Aim for nothing-but-net; rim shots that drop still keep the streak but miss the bonus.",
+      "When the hoop moves, shoot as it reaches the end of its path where it slows down.",
+      "Keyboard players can fine-tune power with the up and down arrows for repeatable shots."
+    ],
+    "faq": [
+      {
+        "q": "How long is a round of Hoop Streak?",
+        "a": "Each round lasts sixty seconds. Your score depends on how many baskets you make and how long you keep the streak going."
+      },
+      {
+        "q": "Can I play with a keyboard?",
+        "a": "Yes. Left and right set the angle, up and down set the power, and Space shoots."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "bubble-blaster-arena",
@@ -71,11 +211,39 @@
     "thumbnail": "/thumbs/bubble-blaster-arena.svg",
     "iframeUrl": "/games/bubble-blaster-arena/index.html",
     "shortDescription": "Aim, ricochet, clear the board. Pop a cluster and everything it was holding up falls with it — and a fresh row drops from the ceiling every eight shots.",
-    "tags": ["puzzle", "shooter", "high-score"],
+    "tags": [
+      "puzzle",
+      "shooter",
+      "high-score"
+    ],
     "howToPlay": "Drag to aim and release to fire, or ←→ and Space. The dotted guide banks off the side walls exactly as the shot will. Three of a colour clears them; anything left with nothing above it drops, and dropped bubbles pay more than popped ones.",
     "featured": false,
     "plays": 64980,
-    "addedAt": "2026-06-27"
+    "addedAt": "2026-06-27",
+    "about": [
+      "Bubble Blaster Arena is a bubble shooter where angles matter. Aim with the dotted guide, bank shots off the side walls, and match three or more of a colour to pop them.",
+      "Pop a group that was holding others up and everything beneath it falls — and dropped bubbles score more than popped ones. A new row lowers from the ceiling every eight shots, so clearing efficiently is the only way to stay ahead."
+    ],
+    "tips": [
+      "Look for shots that cut a bubble's support — drops are worth more than pops.",
+      "Use wall bank shots to reach colours tucked behind others.",
+      "Count your shots: plan to clear space just before the next row drops every eighth shot.",
+      "Don't waste a shot on a single bubble if a nearby pair can make a three."
+    ],
+    "faq": [
+      {
+        "q": "How many bubbles do I need to match?",
+        "a": "Three or more of the same colour. Any bubbles left with nothing above them fall and score a bonus."
+      },
+      {
+        "q": "When do new rows appear?",
+        "a": "A fresh row drops from the ceiling every eight shots."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "tank-duel-arena",
@@ -84,11 +252,39 @@
     "thumbnail": "/thumbs/tank-duel-arena.svg",
     "iframeUrl": "/games/tank-duel-arena/index.html",
     "shortDescription": "One tank against one bot in a box full of walls that bounce your shells straight back at you. First to five hits takes the duel — then the bot gets better.",
-    "tags": ["shooter", "arena", "vs-bot"],
+    "tags": [
+      "shooter",
+      "arena",
+      "vs-bot"
+    ],
     "howToPlay": "←→ turns, ↑↓ drives, Space fires. On a phone, hold to drive towards your finger and release to shoot. The barrel points wherever the hull points — for the bot too, so if its barrel swings your way, move.",
     "featured": true,
     "plays": 121550,
-    "addedAt": "2026-06-20"
+    "addedAt": "2026-06-20",
+    "about": [
+      "Tank Duel Arena is a one-on-one tank battle against a computer opponent. Drive around a walled arena, line up your barrel, and fire shells that ricochet off the walls — including straight back at you.",
+      "The first tank to land five hits wins the duel, and every victory makes the next bot sharper. Because both barrels point wherever the hull points, reading the bot's direction is as important as aiming your own."
+    ],
+    "tips": [
+      "Use bank shots off walls to hit the bot from angles it is not covering.",
+      "Never fire straight at a nearby wall — your own shell can bounce back into you.",
+      "If the bot's barrel swings towards you, move sideways rather than backwards.",
+      "Keep moving between shots; a stationary tank is the easiest target."
+    ],
+    "faq": [
+      {
+        "q": "How do you win a duel?",
+        "a": "Land five hits on the bot before it lands five on you. Each win raises the bot's difficulty."
+      },
+      {
+        "q": "Can my own shells hit me?",
+        "a": "Yes. Shells bounce off walls, so a careless shot can ricochet back into your tank."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "slope-runner-x",
@@ -97,10 +293,39 @@
     "thumbnail": "/thumbs/slope-runner-x.svg",
     "iframeUrl": "/games/slope-runner-x/index.html",
     "shortDescription": "Steer a rolling ball down an infinite neon slope. Two keys, no brakes, a road that keeps narrowing, and corners that push you towards the drop.",
-    "tags": ["endless", "reflex", "pseudo-3d"],
+    "tags": [
+      "endless",
+      "reflex",
+      "pseudo-3d"
+    ],
     "featured": false,
     "plays": 209870,
-    "addedAt": "2026-06-14"
+    "addedAt": "2026-06-14",
+    "howToPlay": "Use ← → or A and D to steer; on a phone, hold your finger left or right of centre. The ball rolls forward on its own and speeds up the further you go, so all you control is your line. Stay on the road, and pass close to the pylons for bonus points.",
+    "about": [
+      "Slope Runner X sends a ball rolling down an endless neon slope. You only steer — the speed is out of your hands and keeps rising — while the road bends, narrows and pushes you towards the edge on every corner.",
+      "Pylons stand along the track and brushing past them close pays bonus points, so the best scores come from riding near danger rather than playing it safe. It is a classic unblocked slope-style game that loads instantly in a browser tab."
+    ],
+    "tips": [
+      "Make small, early corrections — big swerves at high speed send you off the edge.",
+      "Drift towards the inside of a bend before it starts; corners push you outward.",
+      "Brush pylons for bonuses only when the road ahead is straight.",
+      "On touch screens, keep your finger close to the centre for finer steering."
+    ],
+    "faq": [
+      {
+        "q": "How do you control Slope Runner X?",
+        "a": "Steer with the left and right arrows or A and D. On a phone or tablet, hold your finger to the left or right of the screen's centre."
+      },
+      {
+        "q": "How do I get a higher score?",
+        "a": "Survive longer and pass close to pylons — near misses pay bonus points on top of distance."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ]
   },
   {
     "slug": "cookie-empire-tycoon",
@@ -109,10 +334,43 @@
     "thumbnail": "/thumbs/cookie-empire-tycoon.svg",
     "iframeUrl": "/games/cookie-empire-tycoon/index.html",
     "shortDescription": "Click one cookie, end up running an orbital bakery. Eight producers, six upgrades, a golden cookie that pays seven times a tap while it lasts, and a franchise reset that makes the next run quicker.",
-    "tags": ["idle", "tycoon", "prestige"],
+    "tags": [
+      "idle",
+      "tycoon",
+      "prestige"
+    ],
     "featured": true,
     "plays": 311240,
-    "addedAt": "2026-08-14"
+    "addedAt": "2026-08-14",
+    "howToPlay": "Click the cookie to bake by hand, then spend cookies on producers — Grandmas first, then farms, refineries and ovens all the way up to the Orbital bakery. Upgrades multiply what you already own. When a golden cookie appears, tap fast: for ten seconds taps pay seven times as much. Once you have earned enough, Franchise resets your bakery for a permanent bonus.",
+    "about": [
+      "Cookie Empire Tycoon is a cookie clicker game that grows from one cookie into an orbital baking empire. Eight producers, from a humble Grandma to an Orbital bakery, keep baking for you while six upgrades multiply their output.",
+      "Watch for the golden cookie — it makes every tap worth seven times as much for ten seconds and doubles passive output. When progress slows, the Franchise reset trades your bakery for a permanent multiplier so every new run starts faster than the last."
+    ],
+    "tips": [
+      "Buy the cheapest producer that pays for itself fastest, not always the newest one.",
+      "Save a little before the golden cookie appears so you can tap through the whole bonus.",
+      "Upgrades that multiply a producer you own many of are almost always the best purchase.",
+      "Franchise as soon as the bonus is available — the first resets are the cheapest and speed everything up."
+    ],
+    "faq": [
+      {
+        "q": "What does the golden cookie do?",
+        "a": "For ten seconds every tap pays seven times as much and passive production is doubled."
+      },
+      {
+        "q": "What does Franchise do?",
+        "a": "It resets your cookies, producers and upgrades in exchange for a permanent multiplier that makes every future run faster."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "idle-mine-shaft",
@@ -121,10 +379,43 @@
     "thumbnail": "/thumbs/idle-mine-shaft.svg",
     "iframeUrl": "/games/idle-mine-shaft/index.html",
     "shortDescription": "Dig, hire, automate. Deeper rock pays better, every 250 metres strikes a seam worth half a minute of income, and the haul crew keeps sinking the shaft while the tab is closed.",
-    "tags": ["idle", "management", "offline-progress"],
+    "tags": [
+      "idle",
+      "management",
+      "offline-progress"
+    ],
     "featured": true,
     "plays": 268900,
-    "addedAt": "2026-08-09"
+    "addedAt": "2026-08-09",
+    "howToPlay": "Tap to swing the pick and mine ore, then hire producers — pick hands, ore carts, drills, lifts and eventually mining mechs — to dig for you. The deeper the shaft, the more each load is worth, and every 250 metres you strike a seam that pays about thirty seconds of income at once. When income stalls, sink a New shaft to reset with a permanent bonus.",
+    "about": [
+      "Idle Mine Shaft is an idle mining tycoon about digging deeper and automating everything. Start with a pickaxe, then hire crews, carts, drills and giant tunnel borers to sink the shaft for you.",
+      "Deeper rock pays more, and every 250 metres you hit a seam worth half a minute of income. Your haul crew keeps digging while the tab is closed, so coming back later always means a bigger mine than you left."
+    ],
+    "tips": [
+      "Depth multiplies income, so producers that dig faster are worth more than they look.",
+      "Time big purchases just after a seam payout at each 250 metre mark.",
+      "Buy the cheap grip and tip upgrades early — they boost every tap you make.",
+      "Close the tab between sessions; offline digging adds up over a few hours."
+    ],
+    "faq": [
+      {
+        "q": "What are seams in Idle Mine Shaft?",
+        "a": "Every 250 metres the shaft strikes a seam that instantly pays roughly thirty seconds of your income."
+      },
+      {
+        "q": "What does a New shaft do?",
+        "a": "It resets your mine in exchange for a permanent multiplier on all future income."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "click-kingdom",
@@ -133,10 +424,43 @@
     "thumbnail": "/thumbs/click-kingdom.svg",
     "iframeUrl": "/games/click-kingdom/index.html",
     "shortDescription": "Tap to swing your sword, then hire a retinue to swing for you. Every foe you fell pays a bounty scaled to your income and makes the whole kingdom earn a little more.",
-    "tags": ["idle", "rpg", "boss-fights"],
+    "tags": [
+      "idle",
+      "rpg",
+      "boss-fights"
+    ],
     "featured": false,
     "plays": 174630,
-    "addedAt": "2026-08-01"
+    "addedAt": "2026-08-01",
+    "howToPlay": "Tap to swing your sword at the foe in front of you. Each tap is one hit, and your hired retinue — squires, archers, knights, mages and more — deals damage automatically. Defeat a foe to collect a bounty scaled to your income, then the next, tougher foe steps up. Upgrades sharpen your blade and your army; Rebirth resets the kingdom for a permanent bonus.",
+    "about": [
+      "Click Kingdom is an idle RPG clicker where there is always an enemy to defeat. Tap to swing your sword, hire a retinue of squires, archers, knights and griffin riders to fight alongside you, and watch the gold roll in.",
+      "Every foe you fell pays a bounty scaled to your income and makes the whole kingdom stronger. When the battles slow down, Rebirth starts a new reign with a permanent multiplier on everything."
+    ],
+    "tips": [
+      "Tap hard on new foes — your clicks finish fights faster early in each level.",
+      "Spread purchases across units; upgrades boost specific troop types.",
+      "The Royal mint and Tax reform upgrades raise every bounty, so prioritise them.",
+      "Rebirth when foes take noticeably longer to defeat than they did a few levels ago."
+    ],
+    "faq": [
+      {
+        "q": "How do bounties work in Click Kingdom?",
+        "a": "Every defeated foe pays a gold bounty scaled to your current income, so bounties grow as your kingdom does."
+      },
+      {
+        "q": "What is Rebirth?",
+        "a": "Rebirth resets your gold, troops and upgrades for a permanent multiplier on all future earnings."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "capybara-coin-farm",
@@ -145,10 +469,43 @@
     "thumbnail": "/thumbs/capybara-coin-farm.svg",
     "iframeUrl": "/games/capybara-coin-farm/index.html",
     "shortDescription": "The most relaxed clicker on the site. Coins drop, capybaras doze, and petting them holds up a contentment meter that multiplies everything you earn — walk away and it just drifts back to normal.",
-    "tags": ["idle", "cozy", "collector"],
+    "tags": [
+      "idle",
+      "cozy",
+      "collector"
+    ],
     "featured": false,
     "plays": 232770,
-    "addedAt": "2026-07-24"
+    "addedAt": "2026-07-24",
+    "howToPlay": "Pet a capybara to earn coins and fill the contentment meter — the fuller it is, the more everything earns. Spend coins on melon patches, hot springs, orange groves and more to earn passively. The meter slowly drains back to normal if you leave it, so pet now and then. When a season ends, New season resets the farm for a permanent bonus.",
+    "about": [
+      "Capybara Coin Farm is the most relaxing clicker on ClickVault. Pet sleepy capybaras for coins, build them hot springs and melon patches, and dress them up in tiny hats along the way.",
+      "Petting fills a contentment meter that multiplies everything you earn. Walk away and it gently drifts back to normal — there is no punishment and nothing to lose, which makes it a perfect calm game for a break."
+    ],
+    "tips": [
+      "Top up the contentment meter before buying big upgrades so your income is multiplied while you save.",
+      "A full meter takes around four minutes to empty, so short check-ins keep it high.",
+      "Buy the hat upgrades early — cheap, cute and surprisingly effective.",
+      "Start a New season when progress feels slow; the bonus carries over."
+    ],
+    "faq": [
+      {
+        "q": "What does the contentment meter do?",
+        "a": "It multiplies all coin income while it is full. It drains slowly back to normal over a few minutes if you stop petting."
+      },
+      {
+        "q": "Can I lose progress in Capybara Coin Farm?",
+        "a": "No. There is no fail state — the worst that happens is the meter returns to normal."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "idle-space-colony",
@@ -157,10 +514,43 @@
     "thumbnail": "/thumbs/idle-space-colony.svg",
     "iframeUrl": "/games/idle-space-colony/index.html",
     "shortDescription": "Terraform a dead rock one building at a time. The whole colony runs off a single power grid — let it drain into a brownout and your output more than halves, so keep working shifts to hold the domes lit, then jump system and start again richer.",
-    "tags": ["idle", "sci-fi", "strategy"],
+    "tags": [
+      "idle",
+      "sci-fi",
+      "strategy"
+    ],
     "featured": false,
     "plays": 129480,
-    "addedAt": "2026-07-16"
+    "addedAt": "2026-07-16",
+    "howToPlay": "Work shifts to earn credits, then build solar masts, hydroponic domes, quarries and fusion plants to grow the colony. Every building draws on one shared power grid — if it drains too low the colony browns out and output more than halves, so keep working shifts and adding power to stay lit. Jump system resets the colony for a permanent bonus.",
+    "about": [
+      "Idle Space Colony is a sci-fi idle strategy game about terraforming a dead planet. Build solar masts, domes, fusion plants and eventually an orbital elevator and terraformer to turn a barren rock into a thriving colony.",
+      "Everything runs off a single power grid. Let it drain and the colony browns out, cutting output by more than half — so balancing power against growth is the real game. When you are ready, jump to a new system and start again richer."
+    ],
+    "tips": [
+      "Watch the grid before every purchase; a brownout costs more than the building earns.",
+      "Solar masts and the Sun trackers upgrade are the cheapest way to stabilise power early.",
+      "Working shifts tops up the grid as well as earning credits — use it to recover from a brownout.",
+      "Jump system when new buildings start taking several minutes to afford."
+    ],
+    "faq": [
+      {
+        "q": "What is a brownout in Idle Space Colony?",
+        "a": "When the power grid falls too low, the colony browns out and output drops by more than half until power recovers."
+      },
+      {
+        "q": "What does Jump system do?",
+        "a": "It resets your colony in exchange for a permanent multiplier on all future production."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "burger-baron-idle",
@@ -169,10 +559,43 @@
     "thumbnail": "/thumbs/burger-baron-idle.svg",
     "iframeUrl": "/games/burger-baron-idle/index.html",
     "shortDescription": "Flip one patty by hand, then buy the grill that flips a hundred. Tickets pile up on the counter whether you are watching or not — a full counter quietly pays more per second, but clearing one by hand is worth four flips.",
-    "tags": ["idle", "tycoon", "restaurant"],
+    "tags": [
+      "idle",
+      "tycoon",
+      "restaurant"
+    ],
     "featured": false,
     "plays": 141020,
-    "addedAt": "2026-07-08"
+    "addedAt": "2026-07-08",
+    "howToPlay": "Flip patties by hand to earn your first dollars, then buy grills, fry stations, milkshake bars and drive-thru lanes to cook for you. Order tickets pile up on the counter over time — a full counter quietly raises income, but serving a ticket by hand pays four flips' worth. Sell the chain to reset with a permanent bonus.",
+    "about": [
+      "Burger Baron Idle is a restaurant tycoon game that starts with one patty and ends with a global burger brand. Buy grills, fry stations, drive-thrus and franchises to build your fast-food empire.",
+      "Order tickets stack up on the counter whether you are watching or not. Leave them and a full counter boosts passive income; serve them by hand for a big instant payout. Choosing between the two is what makes each session different."
+    ],
+    "tips": [
+      "Serve tickets by hand when you are actively playing — each one is worth four flips.",
+      "Let the counter fill up before you step away so passive income stays boosted.",
+      "Combo deals and Radio jingle multiply the whole restaurant, so buy them early.",
+      "Sell the chain once a new location takes longer than a few minutes to afford."
+    ],
+    "faq": [
+      {
+        "q": "What are tickets in Burger Baron Idle?",
+        "a": "Orders that build up on the counter over time. Serving one by hand pays four flips, while a full counter raises passive income."
+      },
+      {
+        "q": "What does Sell the chain do?",
+        "a": "It resets your restaurants for a permanent multiplier on everything you earn afterwards."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   },
   {
     "slug": "crystal-tap-tycoon",
@@ -181,9 +604,42 @@
     "thumbnail": "/thumbs/crystal-tap-tycoon.svg",
     "iframeUrl": "/games/crystal-tap-tycoon/index.html",
     "shortDescription": "Shatter crystals for shards, spend shards on drills, and chain taps inside a 1.2 second window to stack a combo worth up to eight and a half times a tap. Cheap upgrades and a low prestige bar make this the short-session one.",
-    "tags": ["idle", "prestige", "quick-loop"],
+    "tags": [
+      "idle",
+      "prestige",
+      "quick-loop"
+    ],
     "featured": false,
     "plays": 88350,
-    "addedAt": "2026-06-30"
+    "addedAt": "2026-06-30",
+    "howToPlay": "Tap to shatter crystals for shards and spend them on chisels, drills, lasers and prism engines that mine for you. Tap again within 1.2 seconds to build a combo — each step raises your tap value, up to about eight and a half times. Stop tapping and the combo falls away. Resonate resets your mine early for a permanent bonus.",
+    "about": [
+      "Crystal Tap Tycoon is a fast idle clicker built for short sessions. Shatter crystals for shards, buy drills and lasers to mine for you, and chain rapid taps into a combo worth up to eight and a half times a normal tap.",
+      "Upgrades are cheap and the prestige bar is low, so you see progress within minutes instead of hours. It is the best pick on the site when you only have a few minutes to play."
+    ],
+    "tips": [
+      "Keep taps under 1.2 seconds apart to hold your combo at its peak.",
+      "Buy tap upgrades like the Weighted mallet early — they multiply your combo too.",
+      "Resonate often; the low prestige bar means each reset pays off quickly.",
+      "Let drills run between combo bursts instead of tapping slowly."
+    ],
+    "faq": [
+      {
+        "q": "How does the combo work in Crystal Tap Tycoon?",
+        "a": "Each tap within 1.2 seconds of the last adds to your combo, up to about 8.5 times a normal tap. Pause too long and it drains away."
+      },
+      {
+        "q": "What does Resonate do?",
+        "a": "It resets your shards and drills for a permanent multiplier. The bar is low, so you can resonate often."
+      },
+      {
+        "q": "Does my progress save?",
+        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
+      },
+      {
+        "q": "Does it keep earning when the tab is closed?",
+        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
+      }
+    ]
   }
 ]
