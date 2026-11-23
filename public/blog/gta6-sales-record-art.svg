@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Neon bar chart comparing GTA V and GTA 6 day-one revenue">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a0b3d"/><stop offset=".55" stop-color="#5b1a7a"/><stop offset="1" stop-color="#ff6a6a"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe259"/><stop offset="1" stop-color="#ff4d8d"/></linearGradient>
+<linearGradient id="barA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7ee8fa"/><stop offset="1" stop-color="#3a7bd5"/></linearGradient>
+<linearGradient id="barB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a9e"/><stop offset="1" stop-color="#ff2e8a"/></linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1180" cy="560" r="230" fill="url(#sun)" opacity=".9"/>
+<g fill="#5b1a7a" opacity=".55"><rect x="950" y="520" width="460" height="10"/><rect x="950" y="560" width="460" height="14"/><rect x="950" y="604" width="460" height="18"/><rect x="950" y="652" width="460" height="22"/></g>
+<g fill="#12062b">
+<rect x="0" y="640" width="1600" height="260"/>
+<rect x="60" y="520" width="90" height="130"/><rect x="160" y="470" width="70" height="180"/><rect x="240" y="545" width="110" height="105"/>
+<rect x="1360" y="500" width="80" height="150"/><rect x="1450" y="440" width="70" height="210"/><rect x="1530" y="530" width="70" height="120"/>
+</g>
+<g stroke="#12062b" stroke-width="10" fill="none" stroke-linecap="round">
+<path d="M880 650 C 870 560, 860 500, 900 430"/><path d="M900 430 c -60 -10 -110 10 -140 40 M900 430 c -30 -40 -80 -55 -130 -45 M900 430 c 20 -50 70 -70 120 -60 M900 430 c 60 -5 100 25 120 60 M900 430 c 10 -60 0 -100 -20 -130"/>
+<path d="M1030 650 C 1025 590, 1020 540, 1045 490"/><path d="M1045 490 c -45 -8 -80 8 -100 30 M1045 490 c -20 -30 -60 -40 -95 -32 M1045 490 c 15 -38 52 -52 90 -45 M1045 490 c 45 -3 75 18 90 45"/>
+</g>
+<g filter="url(#glow)">
+<rect x="250" y="578" width="170" height="72" rx="14" fill="url(#barA)"/>
+<rect x="520" y="310" width="170" height="340" rx="14" fill="url(#barB)"/>
+</g>
+<g font-family="Arial Black, Arial, sans-serif" font-weight="900" text-anchor="middle">
+<text x="335" y="558" font-size="44" fill="#ffffff">$0.8B</text>
+<text x="605" y="290" font-size="56" fill="#ffffff">$3.79B</text>
+<text x="335" y="710" font-size="34" fill="#7ee8fa">2013</text>
+<text x="605" y="710" font-size="34" fill="#ff9a9e">2026</text>
+</g>
+<g font-family="Arial Black, Arial, sans-serif" font-weight="900">
+<text x="80" y="130" font-size="72" fill="#ffffff">DAY-ONE SALES</text>
+<text x="80" y="200" font-size="40" fill="#ffe259">32.5M copies before launch</text>
+</g>
+<rect x="0" y="780" width="1600" height="120" fill="#000" opacity=".25"/>
+</svg>

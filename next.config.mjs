@@ -19,6 +19,19 @@ const nextConfig = {
     // ],
   },
 
+  // The idle/clicker collection was retired in Nov 2026. Permanent redirects keep the
+  // search traffic and backlinks those URLs earned instead of serving 404s.
+  async redirects() {
+    const retired = [
+      'cookie-empire-tycoon', 'idle-mine-shaft', 'click-kingdom', 'capybara-coin-farm',
+      'idle-space-colony', 'burger-baron-idle', 'crystal-tap-tycoon',
+    ]
+    return [
+      { source: '/category/idle-clicker', destination: '/category/puzzle', permanent: true },
+      ...retired.map((slug) => ({ source: `/games/${slug}`, destination: '/category/puzzle', permanent: true })),
+    ]
+  },
+
   async headers() {
     return [
       {

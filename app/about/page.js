@@ -13,8 +13,8 @@ export default function AboutPage() {
   return (
     <LegalPage title={`About ${site.name}`}>
       <p>
-        {site.name} is a curated collection of {getAllGames().length} browser-based idle,
-        clicker, and arcade games that run straight in your browser — no downloads, no
+        {site.name} is a curated collection of {getAllGames().length} browser-based arcade,
+        puzzle, and strategy games that run straight in your browser — no downloads, no
         installs, and no third-party launchers.
       </p>
 

@@ -1,5 +1,210 @@
 [
   {
+    "slug": "block-puzzle-blitz",
+    "title": "Block Puzzle Blitz",
+    "category": "puzzle",
+    "tags": [
+      "block-puzzle",
+      "drag-and-drop",
+      "high-score"
+    ],
+    "featured": true,
+    "addedAt": "2026-11-23",
+    "shortDescription": "Drag colourful blocks onto an 8x8 board and fill whole rows or columns to clear them. Chain clears on back-to-back moves for big combo points, and keep going until nothing fits.",
+    "howToPlay": "Drag one of the three blocks in your tray onto the board and let go to drop it. Fill every square in a row or a column to clear that line. When all three blocks are placed you get a new set. Clearing lines on consecutive moves builds a combo multiplier. The game ends when none of your remaining blocks fits anywhere on the board.",
+    "about": [
+      "Block Puzzle Blitz is a relaxing but surprisingly tactical block puzzle game. There is no timer and no falling pieces: you choose where every block goes, so each game is about planning ahead and keeping enough open space for whatever shape comes next.",
+      "Points come from every square you place, with bigger rewards for clearing several lines at once and for clearing on back-to-back moves. Blocks that no longer fit anywhere fade out in your tray, so you can always see how close you are to running out of room."
+    ],
+    "tips": [
+      "Keep at least one full row or column empty so a long 1x5 bar always has somewhere to go.",
+      "Place the awkward 3x3 square early while the board still has room for it.",
+      "Clearing a row and a column with one block scores far more than clearing them separately.",
+      "Look at all three tray pieces before placing the first one, and plan where each will fit."
+    ],
+    "faq": [
+      {
+        "q": "How do combos work in Block Puzzle Blitz?",
+        "a": "Every time you clear at least one line on consecutive placements, your combo grows and each clear is worth an extra 10 points per combo step. Placing a block that clears nothing resets the combo."
+      },
+      {
+        "q": "When does the game end?",
+        "a": "The game ends when none of the blocks left in your tray can fit anywhere on the board. Faded blocks in the tray are the ones that no longer fit."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/block-puzzle-blitz.svg",
+    "iframeUrl": "/games/block-puzzle-blitz/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "mine-hunt",
+    "title": "Mine Hunt",
+    "category": "puzzle",
+    "tags": [
+      "minesweeper",
+      "logic",
+      "classic"
+    ],
+    "featured": true,
+    "addedAt": "2026-11-23",
+    "shortDescription": "The classic mine-clearing logic puzzle. Read the numbers, flag the hidden mines and open every safe square on Easy, Medium or Hard boards. Your first tap is always safe.",
+    "howToPlay": "Click or tap a square to open it. A number tells you how many of the eight squares around it hide a mine. Right-click or long-press a square to plant a flag where you are sure a mine is, or switch on Flag mode in the top bar. Tap an opened number that already has the right number of flags around it to open all of its other neighbours at once. Open every safe square to win.",
+    "about": [
+      "Mine Hunt is a fresh take on the mine-clearing puzzle that has been a favourite on computers for decades. Every board is pure logic: the numbers always contain enough information to make progress, and the fun is in spotting the patterns that tell you exactly where the mines are.",
+      "Choose Easy (9x9, 10 mines) for a quick game, Medium (12x12, 24 mines) for a proper challenge, or Hard (16x16, 48 mines) for a long session. Your best time is saved separately for each difficulty, and your first tap always opens a safe area."
+    ],
+    "tips": [
+      "A 1 touching only one unopened square means that square is a mine, so flag it.",
+      "Look for the 1-2-1 pattern along a wall: the mines sit next to the two 1s.",
+      "Tapping a satisfied number to open its neighbours saves a lot of time on bigger boards.",
+      "If you are truly stuck, guess in a corner. Corners have fewer neighbours, so they are less likely to set off a chain."
+    ],
+    "faq": [
+      {
+        "q": "Is the first click in Mine Hunt always safe?",
+        "a": "Yes. Mines are placed after your first tap and never in the 3x3 area around it, so the first move always opens up part of the board."
+      },
+      {
+        "q": "How do I flag a mine on a phone?",
+        "a": "Long-press a square, or turn on Flag mode in the top bar so a normal tap plants a flag instead of opening the square."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/mine-hunt.svg",
+    "iframeUrl": "/games/mine-hunt/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "klondike-solitaire",
+    "title": "Klondike Solitaire",
+    "category": "puzzle",
+    "tags": [
+      "solitaire",
+      "cards",
+      "classic"
+    ],
+    "featured": false,
+    "addedAt": "2026-11-23",
+    "shortDescription": "Classic Klondike solitaire with Draw 1 and Draw 3 modes. Drag cards or tap to auto-move, undo as often as you like, and let auto-finish wrap up the game once every card is face up.",
+    "howToPlay": "Move all 52 cards onto the four foundations at the top right, building each one up by suit from Ace to King. In the seven columns below, build down in alternating colours (a red 6 on a black 7). Only a King can move into an empty column. Tap the deck to deal new cards. Drag a card or a run of cards to move it, or tap a card to send it to the best legal spot. Use Undo to take back moves.",
+    "about": [
+      "Klondike Solitaire is the card game most people simply call solitaire. This version keeps the rules you know and adds the comforts that make it quick to play in a browser: tap-to-move, unlimited undo, and an automatic finish once the game is effectively won.",
+      "Play Draw 1 for a relaxed game you can usually win, or switch to Draw 3 for the tougher traditional challenge. Your best time and move count are saved for each mode, so there is always a record to beat."
+    ],
+    "tips": [
+      "Turning over face-down cards in the columns matters more than anything else, so work on the tallest columns first.",
+      "Do not rush cards onto the foundations if you still need them to hold other cards in the columns.",
+      "Only empty a column when you have a King ready to move into it.",
+      "In Draw 3, try to keep the deck order changing by playing cards from the waste whenever you can."
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between Draw 1 and Draw 3?",
+        "a": "In Draw 1 you turn over one card from the deck at a time and can play every card. In Draw 3 you turn over three and can only play the top one, which makes the game much harder."
+      },
+      {
+        "q": "Can I undo moves in Klondike Solitaire?",
+        "a": "Yes. Use the Undo button in the top bar or press Ctrl+Z as many times as you like."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/klondike-solitaire.svg",
+    "iframeUrl": "/games/klondike-solitaire/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "turf-takeover",
+    "title": "Turf Takeover",
+    "category": "unblocked",
+    "tags": [
+      "io",
+      "territory",
+      "vs-bot"
+    ],
+    "featured": true,
+    "addedAt": "2026-11-23",
+    "shortDescription": "An io-style territory battle. Leave your zone to draw a trail, loop back home to claim everything inside, and cut across rival trails to knock them out before they take the map.",
+    "howToPlay": "Steer with the arrow keys or WASD, or swipe on a touchscreen. While you are outside your own colour you leave a trail behind you. Return to your zone to turn the whole enclosed area into your territory, including land owned by bots. Drive across a rival's trail to knock them out, but never touch your own trail and keep your trail safe from rivals, or you are out.",
+    "about": [
+      "Turf Takeover is a fast territory-capture game inspired by the io games that took over school breaks and lunch hours. You start with a small patch of the map and five computer rivals who want the same land.",
+      "Every trip outside your zone is a gamble: a bigger loop claims more ground but leaves your trail exposed for longer. Your score is the largest share of the map you held during the run, and knocked-out rivals respawn so the competition never stops."
+    ],
+    "tips": [
+      "Short, quick loops close to home are the safest way to grow early.",
+      "Rivals are most vulnerable when they are far from home with a long trail behind them.",
+      "Use the minimap in the corner to spot open, unclaimed ground.",
+      "Claiming land a rival is standing in will not knock them out, but cutting their trail will."
+    ],
+    "faq": [
+      {
+        "q": "How do I claim territory in Turf Takeover?",
+        "a": "Leave your coloured zone, draw a loop with your trail, and return to your zone. Everything inside the loop becomes yours."
+      },
+      {
+        "q": "What knocks you out?",
+        "a": "Touching your own trail, hitting the edge of the map, or a rival crossing your trail while you are outside your zone."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/turf-takeover.svg",
+    "iframeUrl": "/games/turf-takeover/index.html",
+    "plays": 0
+  },
+  {
+    "slug": "checkmate-chess",
+    "title": "Checkmate Chess",
+    "category": "puzzle",
+    "tags": [
+      "chess",
+      "strategy",
+      "vs-bot"
+    ],
+    "featured": false,
+    "addedAt": "2026-11-23",
+    "shortDescription": "Play full-rules chess against the computer on Easy, Normal or Hard. Castling, en passant and promotion are all in, with move hints, last-move highlights and undo.",
+    "howToPlay": "You play the white pieces. Tap or click one of your pieces to see the squares it can move to, then tap a highlighted square to make the move. The computer replies straight away. Pawns that reach the far side become queens. Use Undo to take back your last move, and switch between Easy, Normal and Hard from the top bar.",
+    "about": [
+      "Checkmate Chess gives you a complete game of chess in a browser tab, with every official rule including castling, en passant, promotion, stalemate and the 50-move rule. Legal moves are highlighted, so it is a friendly way to learn as well as to practise.",
+      "The computer opponent comes in three strengths. Easy makes the occasional mistake and is great for beginners, Normal punishes loose pieces, and Hard looks several moves deep and searches capture sequences. Your wins against each level are counted on your device."
+    ],
+    "tips": [
+      "Control the centre early with your e and d pawns and develop knights before bishops.",
+      "Castle in the first ten moves to keep your king safe.",
+      "Before every move, check whether any of your pieces are undefended.",
+      "On Hard, avoid trading pieces when you are behind; look for forks and pins instead."
+    ],
+    "faq": [
+      {
+        "q": "Does Checkmate Chess follow the official rules?",
+        "a": "Yes. Castling, en passant, pawn promotion, check, checkmate, stalemate, the 50-move rule and draws by insufficient material are all supported. Pawns always promote to a queen."
+      },
+      {
+        "q": "How strong is the Hard computer?",
+        "a": "Hard searches three moves ahead and then follows capture sequences, so it rarely leaves pieces hanging. It is a solid challenge for casual and club-level players."
+      },
+      {
+        "q": "Is it free and does it need a download?",
+        "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
+      }
+    ],
+    "thumbnail": "/thumbs/checkmate-chess.svg",
+    "iframeUrl": "/games/checkmate-chess/index.html",
+    "plays": 0
+  },
+  {
     "slug": "tower-rush-defense",
     "title": "Tower Rush Defense",
     "category": "unblocked",
@@ -488,321 +693,6 @@
       {
         "q": "Is it free and does it need a download?",
         "a": "It is completely free and runs in any modern browser on a Chromebook, laptop, tablet or phone. There is nothing to install and no account to make."
-      }
-    ]
-  },
-  {
-    "slug": "cookie-empire-tycoon",
-    "title": "Cookie Empire Tycoon",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/cookie-empire-tycoon.svg",
-    "iframeUrl": "/games/cookie-empire-tycoon/index.html",
-    "shortDescription": "Click one cookie, end up running an orbital bakery. Eight producers, six upgrades, a golden cookie that pays seven times a tap while it lasts, and a franchise reset that makes the next run quicker.",
-    "tags": [
-      "idle",
-      "tycoon",
-      "prestige"
-    ],
-    "featured": true,
-    "plays": 311240,
-    "addedAt": "2026-08-14",
-    "howToPlay": "Click the cookie to bake by hand, then spend cookies on producers — Grandmas first, then farms, refineries and ovens all the way up to the Orbital bakery. Upgrades multiply what you already own. When a golden cookie appears, tap fast: for ten seconds taps pay seven times as much. Once you have earned enough, Franchise resets your bakery for a permanent bonus.",
-    "about": [
-      "Cookie Empire Tycoon is a cookie clicker game that grows from one cookie into an orbital baking empire. Eight producers, from a humble Grandma to an Orbital bakery, keep baking for you while six upgrades multiply their output.",
-      "Watch for the golden cookie — it makes every tap worth seven times as much for ten seconds and doubles passive output. When progress slows, the Franchise reset trades your bakery for a permanent multiplier so every new run starts faster than the last."
-    ],
-    "tips": [
-      "Buy the cheapest producer that pays for itself fastest, not always the newest one.",
-      "Save a little before the golden cookie appears so you can tap through the whole bonus.",
-      "Upgrades that multiply a producer you own many of are almost always the best purchase.",
-      "Franchise as soon as the bonus is available — the first resets are the cheapest and speed everything up."
-    ],
-    "faq": [
-      {
-        "q": "What does the golden cookie do?",
-        "a": "For ten seconds every tap pays seven times as much and passive production is doubled."
-      },
-      {
-        "q": "What does Franchise do?",
-        "a": "It resets your cookies, producers and upgrades in exchange for a permanent multiplier that makes every future run faster."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "idle-mine-shaft",
-    "title": "Idle Mine Shaft",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/idle-mine-shaft.svg",
-    "iframeUrl": "/games/idle-mine-shaft/index.html",
-    "shortDescription": "Dig, hire, automate. Deeper rock pays better, every 250 metres strikes a seam worth half a minute of income, and the haul crew keeps sinking the shaft while the tab is closed.",
-    "tags": [
-      "idle",
-      "management",
-      "offline-progress"
-    ],
-    "featured": true,
-    "plays": 268900,
-    "addedAt": "2026-08-09",
-    "howToPlay": "Tap to swing the pick and mine ore, then hire producers — pick hands, ore carts, drills, lifts and eventually mining mechs — to dig for you. The deeper the shaft, the more each load is worth, and every 250 metres you strike a seam that pays about thirty seconds of income at once. When income stalls, sink a New shaft to reset with a permanent bonus.",
-    "about": [
-      "Idle Mine Shaft is an idle mining tycoon about digging deeper and automating everything. Start with a pickaxe, then hire crews, carts, drills and giant tunnel borers to sink the shaft for you.",
-      "Deeper rock pays more, and every 250 metres you hit a seam worth half a minute of income. Your haul crew keeps digging while the tab is closed, so coming back later always means a bigger mine than you left."
-    ],
-    "tips": [
-      "Depth multiplies income, so producers that dig faster are worth more than they look.",
-      "Time big purchases just after a seam payout at each 250 metre mark.",
-      "Buy the cheap grip and tip upgrades early — they boost every tap you make.",
-      "Close the tab between sessions; offline digging adds up over a few hours."
-    ],
-    "faq": [
-      {
-        "q": "What are seams in Idle Mine Shaft?",
-        "a": "Every 250 metres the shaft strikes a seam that instantly pays roughly thirty seconds of your income."
-      },
-      {
-        "q": "What does a New shaft do?",
-        "a": "It resets your mine in exchange for a permanent multiplier on all future income."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "click-kingdom",
-    "title": "Click Kingdom",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/click-kingdom.svg",
-    "iframeUrl": "/games/click-kingdom/index.html",
-    "shortDescription": "Tap to swing your sword, then hire a retinue to swing for you. Every foe you fell pays a bounty scaled to your income and makes the whole kingdom earn a little more.",
-    "tags": [
-      "idle",
-      "rpg",
-      "boss-fights"
-    ],
-    "featured": false,
-    "plays": 174630,
-    "addedAt": "2026-08-01",
-    "howToPlay": "Tap to swing your sword at the foe in front of you. Each tap is one hit, and your hired retinue — squires, archers, knights, mages and more — deals damage automatically. Defeat a foe to collect a bounty scaled to your income, then the next, tougher foe steps up. Upgrades sharpen your blade and your army; Rebirth resets the kingdom for a permanent bonus.",
-    "about": [
-      "Click Kingdom is an idle RPG clicker where there is always an enemy to defeat. Tap to swing your sword, hire a retinue of squires, archers, knights and griffin riders to fight alongside you, and watch the gold roll in.",
-      "Every foe you fell pays a bounty scaled to your income and makes the whole kingdom stronger. When the battles slow down, Rebirth starts a new reign with a permanent multiplier on everything."
-    ],
-    "tips": [
-      "Tap hard on new foes — your clicks finish fights faster early in each level.",
-      "Spread purchases across units; upgrades boost specific troop types.",
-      "The Royal mint and Tax reform upgrades raise every bounty, so prioritise them.",
-      "Rebirth when foes take noticeably longer to defeat than they did a few levels ago."
-    ],
-    "faq": [
-      {
-        "q": "How do bounties work in Click Kingdom?",
-        "a": "Every defeated foe pays a gold bounty scaled to your current income, so bounties grow as your kingdom does."
-      },
-      {
-        "q": "What is Rebirth?",
-        "a": "Rebirth resets your gold, troops and upgrades for a permanent multiplier on all future earnings."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "capybara-coin-farm",
-    "title": "Capybara Coin Farm",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/capybara-coin-farm.svg",
-    "iframeUrl": "/games/capybara-coin-farm/index.html",
-    "shortDescription": "The most relaxed clicker on the site. Coins drop, capybaras doze, and petting them holds up a contentment meter that multiplies everything you earn — walk away and it just drifts back to normal.",
-    "tags": [
-      "idle",
-      "cozy",
-      "collector"
-    ],
-    "featured": false,
-    "plays": 232770,
-    "addedAt": "2026-07-24",
-    "howToPlay": "Pet a capybara to earn coins and fill the contentment meter — the fuller it is, the more everything earns. Spend coins on melon patches, hot springs, orange groves and more to earn passively. The meter slowly drains back to normal if you leave it, so pet now and then. When a season ends, New season resets the farm for a permanent bonus.",
-    "about": [
-      "Capybara Coin Farm is the most relaxing clicker on ClickVault. Pet sleepy capybaras for coins, build them hot springs and melon patches, and dress them up in tiny hats along the way.",
-      "Petting fills a contentment meter that multiplies everything you earn. Walk away and it gently drifts back to normal — there is no punishment and nothing to lose, which makes it a perfect calm game for a break."
-    ],
-    "tips": [
-      "Top up the contentment meter before buying big upgrades so your income is multiplied while you save.",
-      "A full meter takes around four minutes to empty, so short check-ins keep it high.",
-      "Buy the hat upgrades early — cheap, cute and surprisingly effective.",
-      "Start a New season when progress feels slow; the bonus carries over."
-    ],
-    "faq": [
-      {
-        "q": "What does the contentment meter do?",
-        "a": "It multiplies all coin income while it is full. It drains slowly back to normal over a few minutes if you stop petting."
-      },
-      {
-        "q": "Can I lose progress in Capybara Coin Farm?",
-        "a": "No. There is no fail state — the worst that happens is the meter returns to normal."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "idle-space-colony",
-    "title": "Idle Space Colony",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/idle-space-colony.svg",
-    "iframeUrl": "/games/idle-space-colony/index.html",
-    "shortDescription": "Terraform a dead rock one building at a time. The whole colony runs off a single power grid — let it drain into a brownout and your output more than halves, so keep working shifts to hold the domes lit, then jump system and start again richer.",
-    "tags": [
-      "idle",
-      "sci-fi",
-      "strategy"
-    ],
-    "featured": false,
-    "plays": 129480,
-    "addedAt": "2026-07-16",
-    "howToPlay": "Work shifts to earn credits, then build solar masts, hydroponic domes, quarries and fusion plants to grow the colony. Every building draws on one shared power grid — if it drains too low the colony browns out and output more than halves, so keep working shifts and adding power to stay lit. Jump system resets the colony for a permanent bonus.",
-    "about": [
-      "Idle Space Colony is a sci-fi idle strategy game about terraforming a dead planet. Build solar masts, domes, fusion plants and eventually an orbital elevator and terraformer to turn a barren rock into a thriving colony.",
-      "Everything runs off a single power grid. Let it drain and the colony browns out, cutting output by more than half — so balancing power against growth is the real game. When you are ready, jump to a new system and start again richer."
-    ],
-    "tips": [
-      "Watch the grid before every purchase; a brownout costs more than the building earns.",
-      "Solar masts and the Sun trackers upgrade are the cheapest way to stabilise power early.",
-      "Working shifts tops up the grid as well as earning credits — use it to recover from a brownout.",
-      "Jump system when new buildings start taking several minutes to afford."
-    ],
-    "faq": [
-      {
-        "q": "What is a brownout in Idle Space Colony?",
-        "a": "When the power grid falls too low, the colony browns out and output drops by more than half until power recovers."
-      },
-      {
-        "q": "What does Jump system do?",
-        "a": "It resets your colony in exchange for a permanent multiplier on all future production."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "burger-baron-idle",
-    "title": "Burger Baron Idle",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/burger-baron-idle.svg",
-    "iframeUrl": "/games/burger-baron-idle/index.html",
-    "shortDescription": "Flip one patty by hand, then buy the grill that flips a hundred. Tickets pile up on the counter whether you are watching or not — a full counter quietly pays more per second, but clearing one by hand is worth four flips.",
-    "tags": [
-      "idle",
-      "tycoon",
-      "restaurant"
-    ],
-    "featured": false,
-    "plays": 141020,
-    "addedAt": "2026-07-08",
-    "howToPlay": "Flip patties by hand to earn your first dollars, then buy grills, fry stations, milkshake bars and drive-thru lanes to cook for you. Order tickets pile up on the counter over time — a full counter quietly raises income, but serving a ticket by hand pays four flips' worth. Sell the chain to reset with a permanent bonus.",
-    "about": [
-      "Burger Baron Idle is a restaurant tycoon game that starts with one patty and ends with a global burger brand. Buy grills, fry stations, drive-thrus and franchises to build your fast-food empire.",
-      "Order tickets stack up on the counter whether you are watching or not. Leave them and a full counter boosts passive income; serve them by hand for a big instant payout. Choosing between the two is what makes each session different."
-    ],
-    "tips": [
-      "Serve tickets by hand when you are actively playing — each one is worth four flips.",
-      "Let the counter fill up before you step away so passive income stays boosted.",
-      "Combo deals and Radio jingle multiply the whole restaurant, so buy them early.",
-      "Sell the chain once a new location takes longer than a few minutes to afford."
-    ],
-    "faq": [
-      {
-        "q": "What are tickets in Burger Baron Idle?",
-        "a": "Orders that build up on the counter over time. Serving one by hand pays four flips, while a full counter raises passive income."
-      },
-      {
-        "q": "What does Sell the chain do?",
-        "a": "It resets your restaurants for a permanent multiplier on everything you earn afterwards."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
-      }
-    ]
-  },
-  {
-    "slug": "crystal-tap-tycoon",
-    "title": "Crystal Tap Tycoon",
-    "category": "idle-clicker",
-    "thumbnail": "/thumbs/crystal-tap-tycoon.svg",
-    "iframeUrl": "/games/crystal-tap-tycoon/index.html",
-    "shortDescription": "Shatter crystals for shards, spend shards on drills, and chain taps inside a 1.2 second window to stack a combo worth up to eight and a half times a tap. Cheap upgrades and a low prestige bar make this the short-session one.",
-    "tags": [
-      "idle",
-      "prestige",
-      "quick-loop"
-    ],
-    "featured": false,
-    "plays": 88350,
-    "addedAt": "2026-06-30",
-    "howToPlay": "Tap to shatter crystals for shards and spend them on chisels, drills, lasers and prism engines that mine for you. Tap again within 1.2 seconds to build a combo — each step raises your tap value, up to about eight and a half times. Stop tapping and the combo falls away. Resonate resets your mine early for a permanent bonus.",
-    "about": [
-      "Crystal Tap Tycoon is a fast idle clicker built for short sessions. Shatter crystals for shards, buy drills and lasers to mine for you, and chain rapid taps into a combo worth up to eight and a half times a normal tap.",
-      "Upgrades are cheap and the prestige bar is low, so you see progress within minutes instead of hours. It is the best pick on the site when you only have a few minutes to play."
-    ],
-    "tips": [
-      "Keep taps under 1.2 seconds apart to hold your combo at its peak.",
-      "Buy tap upgrades like the Weighted mallet early — they multiply your combo too.",
-      "Resonate often; the low prestige bar means each reset pays off quickly.",
-      "Let drills run between combo bursts instead of tapping slowly."
-    ],
-    "faq": [
-      {
-        "q": "How does the combo work in Crystal Tap Tycoon?",
-        "a": "Each tap within 1.2 seconds of the last adds to your combo, up to about 8.5 times a normal tap. Pause too long and it drains away."
-      },
-      {
-        "q": "What does Resonate do?",
-        "a": "It resets your shards and drills for a permanent multiplier. The bar is low, so you can resonate often."
-      },
-      {
-        "q": "Does my progress save?",
-        "a": "Yes. Progress is stored in your browser on this device, so you can close the tab and pick up where you left off. Clearing your browser data or switching devices starts a fresh save."
-      },
-      {
-        "q": "Does it keep earning when the tab is closed?",
-        "a": "Yes — while you are away the game banks half of your normal income per second for up to four hours, and pays it out the next time you open it."
       }
     ]
   }

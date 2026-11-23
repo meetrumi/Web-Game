@@ -31,18 +31,18 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Unblocked idle games that
-            <span className="text-accent-400"> never stop earning</span>
+            Free unblocked games
+            <span className="text-accent-400"> you can play in one tab</span>
           </h1>
 
           <p className="mt-4 max-w-xl text-base leading-relaxed text-brand-100 sm:text-lg">
-            {site.name} is a hand-picked collection of clicker and idle games that run in
-            a single browser tab. Open one, start the numbers going up, and come back
-            whenever you like.
+            {site.name} is a hand-picked collection of arcade, racing, io, puzzle and
+            strategy games that run in a single browser tab. No downloads, no sign-up,
+            just press play.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link href="/category/idle-clicker" className="btn bg-white px-5 py-3 text-base text-brand-700 hover:bg-brand-50">
+            <Link href="/category/unblocked" className="btn bg-white px-5 py-3 text-base text-brand-700 hover:bg-brand-50">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
                 <path d="M8 5.14v13.72a1 1 0 0 0 1.52.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
               </svg>

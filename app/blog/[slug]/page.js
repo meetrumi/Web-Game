@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import GameCard from '@/components/GameCard'
 import AdSlot from '@/components/ads/AdSlot'
-import LinkedText from '@/components/LinkedText'
+import LinkedText, { stripLinks } from '@/components/LinkedText'
 import { getGamesBySlugs } from '@/lib/games'
 import {
   formatDate,
@@ -78,7 +78,7 @@ export default function BlogPostPage({ params }) {
       image: absoluteUrl(post.hero),
       datePublished: post.publishedAt,
       dateModified: post.updatedAt || post.publishedAt,
-      wordCount: [...post.intro, ...post.sections.flatMap((s) => [...s.paragraphs, ...(s.list || [])])].join(' ').split(/\s+/).length,
+      wordCount: stripLinks([...post.intro, ...post.sections.flatMap((s) => [...s.paragraphs, ...(s.list || [])])].join(' ')).split(/\s+/).length,
       keywords: post.keywords?.join(', ') || undefined,
       inLanguage: 'en',
       author: { '@type': 'Organization', name: post.author },
@@ -261,6 +261,30 @@ export default function BlogPostPage({ params }) {
               ))}
             </div>
           </section>
+          )}
+
+          {/* ---- Sources: the outside reporting the article's numbers come from ---- */}
+          {post.sources?.length > 0 && (
+            <section id="sources" className="mt-12 scroll-mt-24">
+              <h2 className="text-2xl font-extrabold tracking-tight text-ink-900 dark:text-white">
+                Sources
+              </h2>
+              <ol className="prose-article mt-4 list-decimal space-y-1.5 pl-5 text-[15px]">
+                {post.sources.map((source) => (
+                  <li key={source.url}>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-brand-600 hover:underline dark:text-brand-300"
+                    >
+                      {source.title}
+                    </a>
+                    {source.publisher && <span className="text-ink-400"> — {source.publisher}</span>}
+                  </li>
+                ))}
+              </ol>
+            </section>
           )}
 
           {/* ---- Play-now block: sends article traffic into the game pages ---- */}

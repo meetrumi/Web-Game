@@ -15,8 +15,8 @@ export const metadata = {
   applicationName: site.name,
   keywords: [
     'unblocked games',
-    'idle games',
-    'clicker games',
+    'puzzle games',
+    'io games',
     'browser games',
     'no download games',
     'html5 games',

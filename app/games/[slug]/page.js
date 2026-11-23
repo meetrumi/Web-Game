@@ -54,7 +54,7 @@ export default function GamePage({ params }) {
 
   const category = getCategory(game.category)
   const related = getRelatedGames(game.slug, 8)
-  const isIdle = game.category === 'idle-clicker'
+  const isIdle = game.category === 'puzzle'
   const guides = getAllPosts().filter((p) => p.relatedGames?.includes(game.slug)).slice(0, 3)
 
   const faqLd = game.faq?.length

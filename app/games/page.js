@@ -6,7 +6,7 @@ import { categories, site } from '@/lib/site'
 
 export const metadata = {
   title: 'All Games',
-  description: `Browse every unblocked idle, clicker and arcade game on ${site.name}. All free, all browser-based, no downloads.`,
+  description: `Browse every free unblocked arcade, io, puzzle and strategy game on ${site.name}. All free, all browser-based, no downloads.`,
   alternates: { canonical: '/games' },
 }
 
@@ -64,7 +64,7 @@ export default function GamesPage({ searchParams }) {
             Nothing matched “{query}”.
           </p>
           <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">
-            Try a genre instead — “idle”, “tycoon”, “runner”, “2-player”.
+            Try a genre instead — “puzzle”, “racing”, “runner”, “io”.
           </p>
           <Link href="/games" className="btn-primary mt-5">
             Show all games

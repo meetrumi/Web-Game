@@ -52,6 +52,8 @@ export async function POST(req) {
         intro,
         sections,
         faq: textToFaq(input.faq),
+        // The editor has no sources field yet; keep whatever the post already cites.
+        ...(existing?.sources?.length ? { sources: existing.sources } : {}),
       }
       p.readingMinutes = readingMinutes(p)
       const next = existing ? posts.map((x) => (x.slug === originalSlug ? p : x)) : [p, ...posts]

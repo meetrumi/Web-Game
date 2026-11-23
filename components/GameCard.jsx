@@ -11,7 +11,7 @@ import { getCategoryName } from '@/lib/games'
  */
 
 export default function GameCard({ game, priority = false, className = '' }) {
-  const isIdle = game.category === 'idle-clicker'
+  const isIdle = game.category === 'puzzle'
 
   return (
     <Link

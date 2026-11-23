@@ -111,7 +111,7 @@ async function main() {
     ...games.map((game) => ({
       file: game.thumbnail,
       title: game.title,
-      label: game.category === 'idle-clicker' ? 'Idle & Clicker' : 'Unblocked',
+      label: game.category === 'puzzle' ? 'Puzzle' : 'Unblocked',
       width: 800,
       height: 600,
       seed: game.slug,

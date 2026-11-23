@@ -130,17 +130,17 @@ export default function HomePage() {
           </h2>
           <div className="prose-article mt-3 max-w-3xl">
             <p>
-              {site.name} collects browser-native idle, clicker and arcade games that run
+              {site.name} collects browser-native arcade, io, puzzle and strategy games that run
               without a download, an installer or a plugin. Every title is HTML5, loads in
               a single tab, and saves your progress to the device you played it on.
             </p>
             <p>
               The two collections split along how you play. {' '}
-              <Link href="/category/idle-clicker" className="font-medium text-brand-600 underline">
-                Idle and clicker games
+              <Link href="/category/puzzle" className="font-medium text-brand-600 underline">
+                Puzzle and strategy games
               </Link>{' '}
-              reward patience: start a production loop, buy the automation, and let the
-              multipliers compound between sessions.{' '}
+              reward thinking: block puzzles, minesweeper, solitaire and chess you can
+              play one calm move at a time.{' '}
               <Link href="/category/unblocked" className="font-medium text-brand-600 underline">
                 Unblocked arcade games
               </Link>{' '}

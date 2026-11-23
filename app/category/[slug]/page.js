@@ -7,7 +7,7 @@ import { absoluteUrl, categories, site } from '@/lib/site'
 
 /**
  * One dynamic route serves both category pages the spec asked for:
- *   /category/unblocked      and      /category/idle-clicker
+ *   /category/unblocked      and      /category/puzzle
  *
  * They are statically generated from the `categories` list in lib/site.js, and
  * `dynamicParams = false` makes any other slug a hard 404 instead of an
@@ -122,14 +122,14 @@ export default function CategoryPage({ params }) {
         <div className="prose-article mt-3 max-w-3xl">
           <p>{category.blurb}</p>
           <p>
-            {category.slug === 'idle-clicker'
-              ? 'Every game in this collection stores progress locally, so you can close the tab and pick the run back up later. Look for the offline-earnings upgrade early: it decides whether a game suits two check-ins a day or wants a pinned tab.'
+            {category.slug === 'puzzle'
+              ? 'Nothing in this collection is against the clock unless you want it to be. Every game saves your best result on the device you play on, works with a mouse or a touchscreen, and runs comfortably on a school Chromebook.'
               : 'These are short-session games. Most runs last two to five minutes, controls are one or two keys, and nothing here needs more than integrated graphics to hold a steady frame rate.'}
           </p>
           <p>
             Want the reasoning behind how we pick these?{' '}
             <Link
-              href="/blog/best-unblocked-idle-games"
+              href="/blog/what-unblocked-really-means"
               className="font-medium text-brand-600 underline"
             >
               Read the selection guide
