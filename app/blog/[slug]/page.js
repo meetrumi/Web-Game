@@ -33,7 +33,8 @@ export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const post = getPostBySlug(params.slug)
   if (!post) return { title: 'Article not found' }
 
@@ -61,7 +62,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function BlogPostPage({ params }) {
+export default async function BlogPostPage(props) {
+  const params = await props.params;
   const post = getPostBySlug(params.slug)
   if (!post) notFound()
 

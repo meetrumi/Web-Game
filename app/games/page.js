@@ -15,7 +15,8 @@ export const metadata = {
  * Reading searchParams makes this route dynamic, which is what we want — the
  * result set depends on the query string.
  */
-export default function GamesPage({ searchParams }) {
+export default async function GamesPage(props) {
+  const searchParams = await props.searchParams;
   const query = (searchParams?.q || '').trim()
   const games = query ? searchGames(query) : getAllGames()
   const total = getAllGames().length

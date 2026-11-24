@@ -6,7 +6,7 @@ import { SESSION_COOKIE, verifySessionToken } from '@/lib/admin/auth'
  * the login screen, so the dashboard does not advertise itself. Every admin response is
  * marked noindex so search engines never list it.
  */
-export async function middleware(req) {
+export async function proxy(req) {
   const { pathname } = req.nextUrl
   const isLogin = pathname === '/admin/login' || pathname === '/api/admin/login'
   const authed = await verifySessionToken(req.cookies.get(SESSION_COOKIE)?.value)

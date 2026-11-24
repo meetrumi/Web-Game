@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, use } from 'react';
 import gamesData from '@/data/games.json'
 import { faqToText, slugify, structureToBody } from '@/lib/admin/format'
 
@@ -19,7 +19,8 @@ function Field({ label, hint, children }) {
   )
 }
 
-export default function PostEditor({ params }) {
+export default function PostEditor(props) {
+  const params = use(props.params);
   const isNew = params.slug === 'new'
   const [form, setForm] = useState(empty)
   const [loaded, setLoaded] = useState(isNew)

@@ -20,7 +20,8 @@ export function generateStaticParams() {
   return getAllGames().map((game) => ({ slug: game.slug }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const game = getGameBySlug(params.slug)
   if (!game) return { title: 'Game not found' }
 
@@ -48,7 +49,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function GamePage({ params }) {
+export default async function GamePage(props) {
+  const params = await props.params;
   const game = getGameBySlug(params.slug)
   if (!game) notFound()
 

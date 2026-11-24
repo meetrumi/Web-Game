@@ -2,7 +2,6 @@ import { ImageResponse } from 'next/og'
 import { site } from '@/lib/site'
 
 // Default 1200×630 social share image (Facebook/X/WhatsApp do not accept SVG thumbnails).
-export const runtime = 'edge'
 export const alt = `${site.name} — ${site.tagline}`
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'

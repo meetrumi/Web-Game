@@ -22,7 +22,8 @@ export function generateStaticParams() {
   return categories.map((category) => ({ slug: category.slug }))
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const category = getCategory(params.slug)
   if (!category) return { title: 'Category not found' }
 
@@ -42,7 +43,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function CategoryPage({ params }) {
+export default async function CategoryPage(props) {
+  const params = await props.params;
   const category = getCategory(params.slug)
   if (!category) notFound()
 
