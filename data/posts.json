@@ -1,5 +1,173 @@
 [
   {
+    "slug": "gta-6-pc-release-date-everything-we-know",
+    "title": "GTA 6 PC Release Date: Everything We Know (and Scams to Avoid)",
+    "description": "Is GTA 6 coming to PC? What Take-Two has said, when a PC version is likely based on Rockstar's history, this week's GitHub drama, and scams to avoid.",
+    "excerpt": "GTA 6 is out on PS5 and Xbox, but PC players are still waiting. Here's what's confirmed, what's likely, and how to avoid the fake 'PC downloads' doing the rounds.",
+    "category": "Gaming News",
+    "hero": "/blog/gta6-pc-release-art.svg",
+    "heroAlt": "Illustration of a gaming PC monitor with a question mark next to a security shield",
+    "keywords": [
+      "gta 6 pc release date",
+      "gta 6 pc",
+      "is gta 6 on pc",
+      "gta 6 pc download",
+      "gta 6 pc port",
+      "when is gta 6 coming to pc"
+    ],
+    "relatedGames": [
+      "drift-alley",
+      "tank-wars",
+      "chicken-road-cross"
+    ],
+    "intro": [
+      "If you play on PC, the last week has probably been a frustrating one. Grand Theft Auto VI launched on 19 November on PlayStation 5 and Xbox Series X|S, your friends are posting clips from Vice City, and the one question you keep typing into Google is simple: when is GTA 6 coming to PC?",
+      "The honest answer is that nobody outside Rockstar knows the exact date yet. But we're not completely in the dark, either. Between what Take-Two's boss has said, how Rockstar has handled every PC release in the past, and a very messy week of news involving GitHub and unofficial ports, there's enough to make a sensible prediction. Here's everything we know, what we think is likely, and the scams you really need to watch out for in the meantime."
+    ],
+    "sections": [
+      {
+        "heading": "Quick answer: is GTA 6 on PC?",
+        "paragraphs": [
+          "No, not yet. GTA 6 is currently only available on PS5 and Xbox Series X|S, and Rockstar has not announced a PC version or a release date. Anything claiming to be an official PC download right now is fake.",
+          "That said, every signal points to a PC version arriving eventually. The question isn't really if, it's when."
+        ]
+      },
+      {
+        "heading": "What Take-Two has actually said",
+        "paragraphs": [
+          "Take-Two Interactive, Rockstar's parent company, has been asked about PC more times than anyone can count, and CEO Strauss Zelnick has given a fairly consistent answer: consoles come first, on purpose.",
+          "In a Bloomberg interview in May, Zelnick explained that the console-first launch is about serving the series' core audience, not a marketing deal with PlayStation. He also pointed out that PC now makes up roughly 45 to 50% of sales for Take-Two's biggest games, which is a big reason fans are confident a PC version is coming. You can read a summary of those comments in [this report from Outlook Respawn](https://respawn.outlookindia.com/gaming/gaming-news/gta-6-pc-release-delay-launch-update).",
+          "At a shareholder meeting in September, Zelnick again described PC as an increasingly important part of the business. Then, just before launch, he told Variety that any news about a PC version would come directly from Rockstar. In other words, Take-Two isn't denying it. It's simply not ready to talk about it yet."
+        ]
+      },
+      {
+        "heading": "When will GTA 6 come to PC? Rockstar's history",
+        "paragraphs": [
+          "The best clue we have is Rockstar's own track record. The studio has launched its last three big games on console first, with PC following later every single time:"
+        ],
+        "list": [
+          "GTA IV: consoles April 2008, PC December 2008 (about 8 months later)",
+          "GTA V: consoles September 2013, PC April 2015 (about 19 months later)",
+          "Red Dead Redemption 2: consoles October 2018, PC November 2019 (about 13 months later)"
+        ]
+      },
+      {
+        "heading": "Our prediction",
+        "paragraphs": [
+          "If Rockstar follows that pattern, a GTA 6 PC release would most likely land somewhere between late 2027 and 2028. Our best guess is the second half of 2027, around a year after the console launch, which would match how Red Dead Redemption 2 was handled.",
+          "Please treat that as an educated estimate, not a confirmed date. Rockstar could announce a PC version sooner, especially given how important PC has become to Take-Two, or it could take longer if the studio focuses on a GTA 6 online mode first. The moment Rockstar announces anything official, we'll update this article."
+        ]
+      },
+      {
+        "heading": "This week's drama: GitHub and the unofficial PC ports",
+        "paragraphs": [
+          "Here's why GTA 6 on PC is suddenly all over the news again. On 27 November, GitHub's official X account posted a message celebrating an open-source project that tries to convert PS5 game files so they run on Windows and Linux, and tied it directly to GTA 6 with the line \"GTA 6 is finally here\". As [PC Gamer reported](https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/), the post was deleted shortly after it went up.",
+          "The reason it caused such a stir is that GitHub, which is owned by Microsoft, had just been removing thousands of unofficial GTA 6 PC port projects at Take-Two's request. [Windows Latest](https://www.windowslatest.com/2026/11/28/gta-6-is-finally-here-microsofts-github-hyped-a-tool-that-turns-ps5-games-into-windows-11-apps-days-after-wiping-3007-gta-6-pc-port-repos-then-quietly-deleted-the-post/) says 3,007 repositories were taken down only two days before the post. Celebrating the same kind of project days later looked, to put it mildly, inconsistent.",
+          "It's important to be clear about what these unofficial ports are. They're not a real PC version of GTA 6. They rely on files taken from the console game, they're being actively taken down for copyright reasons, and they're exactly the kind of thing scammers love to imitate. Which brings us to the most important part of this article."
+        ]
+      },
+      {
+        "heading": "Beware fake 'GTA 6 PC download' scams",
+        "paragraphs": [
+          "Whenever millions of people are searching for something that doesn't exist yet, criminals move in. GTA 6 is the biggest example in years. Security company [Malwarebytes](https://www.malwarebytes.com/blog/news/2026/08/fake-gta-6-extended-look-and-demo-sites-deliver-an-infostealer) found fake websites copying Rockstar's branding and offering a \"GTA 6 demo\" that was actually password-stealing malware. Other scams have included a fake 113GB \"PC build\" passed around on torrent sites, fake beta apps for Android, and lookalike versions of popular repack websites.",
+          "The malware in these files is nasty. Some versions steal saved passwords, browser cookies and logged-in sessions, which can let criminals into your accounts even if you use two-factor authentication. Others try to switch off your antivirus before doing more damage."
+        ],
+        "list": [
+          "There is no official GTA 6 PC download, demo or beta. Anything offering one is fake",
+          "Only trust announcements from Rockstar's official website and social channels",
+          "When a PC version does launch, buy it from Steam, the Epic Games Store or the Rockstar Store",
+          "Never disable your antivirus because an installer tells you to",
+          "If you've already run a suspicious GTA 6 installer, change your passwords from a different device and log out of all sessions"
+        ]
+      },
+      {
+        "heading": "Will your PC be able to run GTA 6?",
+        "paragraphs": [
+          "There are no official PC system requirements yet, so be sceptical of any site listing exact specs. What we do know is that GTA 6 is extremely demanding. Even the PS5 Pro runs the game at 30 frames per second, because the busy streets and huge amount of simulation push the hardware hard. Our [GTA 6 buyer's guide](/blog/gta-6-buyers-guide-price-editions-size) explains the console performance in more detail.",
+          "If you're planning a PC upgrade with GTA 6 in mind, a fast modern CPU, a recent mid-to-high-end graphics card, 32GB of RAM and a large, fast SSD would be a sensible target. The console version already needs about 210GB of storage, so a PC version is unlikely to be any smaller. That said, waiting for official requirements before spending big money is the smarter move."
+        ]
+      },
+      {
+        "heading": "Should you buy a console now or wait?",
+        "paragraphs": [
+          "This is the big decision for a lot of PC players. If you can't stand the thought of waiting a year or more, and avoiding spoilers is important to you, picking up a PS5 or Xbox Series X|S is the only way to play right now. With [GTA 6 breaking sales records](/blog/gta-6-sales-glitches-first-to-beat), the internet is going to be full of story spoilers for a long time.",
+          "If you're happy to wait, there are real benefits. PC versions of Rockstar games have historically arrived with higher frame rates, better graphics options, mod support and all the patches that fixed launch bugs. Patience usually pays off, and you'll get the game in its best possible form."
+        ]
+      },
+      {
+        "heading": "The bottom line",
+        "paragraphs": [
+          "GTA 6 isn't on PC yet and there's no official date, but Take-Two clearly sees PC as important, and Rockstar has brought every major game to PC eventually. Based on its history, late 2027 looks like the most realistic window. Until then, stay away from anything promising an early download, because it's almost certainly a scam.",
+          "In the meantime, if you want to see what all the fuss is about, our [GTA 6 review roundup](/blog/gta-6-review-roundup-metacritic) explains why critics gave it a 99, and our [Game Awards 2026 guide](/blog/game-awards-2026-nominees-predictions) covers its eight nominations. And if you just need something fun to play on your PC right now, ClickVault has plenty of [free browser games](/games). Try Drift Alley for some arcade driving, or Tank Wars for a few explosive rounds."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is GTA 6 available on PC?",
+        "a": "No. GTA 6 is currently only available on PS5 and Xbox Series X|S. Rockstar has not announced a PC version or release date."
+      },
+      {
+        "q": "When is the GTA 6 PC release date?",
+        "a": "There is no official date. Based on Rockstar's history of releasing PC versions 8 to 19 months after consoles, a PC launch between late 2027 and 2028 is the most likely window."
+      },
+      {
+        "q": "Is there a safe GTA 6 PC download?",
+        "a": "No. There is no official GTA 6 PC download, demo or beta. Any site offering one is fake and may install password-stealing malware."
+      },
+      {
+        "q": "Will GTA 6 come to Steam?",
+        "a": "Rockstar's previous PC releases, including GTA V and Red Dead Redemption 2, launched on Steam, the Epic Games Store and the Rockstar Store, so a future GTA 6 PC version is likely to follow the same approach."
+      },
+      {
+        "q": "What are the GTA 6 PC system requirements?",
+        "a": "Official PC requirements have not been released. Be wary of any website listing exact specs before Rockstar announces them."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
+        "publisher": "PC Gamer",
+        "url": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/"
+      },
+      {
+        "title": "Microsoft's GitHub hyped a tool that turns PS5 games into Windows 11 apps, days after wiping 3,007 GTA 6 PC port repos",
+        "publisher": "Windows Latest",
+        "url": "https://www.windowslatest.com/2026/11/28/gta-6-is-finally-here-microsofts-github-hyped-a-tool-that-turns-ps5-games-into-windows-11-apps-days-after-wiping-3007-gta-6-pc-port-repos-then-quietly-deleted-the-post/"
+      },
+      {
+        "title": "GTA VI will not come to PC on launch day, Take-Two CEO says",
+        "publisher": "Outlook Respawn",
+        "url": "https://respawn.outlookindia.com/gaming/gaming-news/gta-6-pc-release-delay-launch-update"
+      },
+      {
+        "title": "GTA 6 on PC sounds even more inevitable in Take-Two CEO's latest comments",
+        "publisher": "GamesRadar+",
+        "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-on-pc-sounds-even-more-inevitable-in-take-two-ceos-latest-comments/"
+      },
+      {
+        "title": "Grand Theft Auto 6 PC and physical disc news will come from Rockstar, confirms Take-Two",
+        "publisher": "TweakTown",
+        "url": "https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html"
+      },
+      {
+        "title": "Fake GTA 6 Extended Look and demo sites deliver an infostealer",
+        "publisher": "Malwarebytes",
+        "url": "https://www.malwarebytes.com/blog/news/2026/08/fake-gta-6-extended-look-and-demo-sites-deliver-an-infostealer"
+      },
+      {
+        "title": "GTA 6 'build' that's 113GB in size is currently circulating online, and it's fake",
+        "publisher": "TweakTown",
+        "url": "https://tweaktown.com/news/113219/gta-6-build-thats-113gb-in-size-is-currently-circulating-online-and-its-fake/index.html"
+      }
+    ],
+    "author": "ClickVault Editorial",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "updatedAt": "2026-11-28",
+    "readingMinutes": 6
+  },
+  {
     "slug": "game-awards-2026-nominees-predictions",
     "title": "Game Awards 2026 Nominees: GOTY List, Predictions & How to Vote",
     "description": "Every Game Awards 2026 Game of the Year nominee explained, the key categories, the GTA 6 debate, our predictions, and how to vote before 9 December.",
@@ -734,7 +902,8 @@
         "heading": "Is GTA 6 on PC?",
         "paragraphs": [
           "Not at launch. GTA 6 is only available on PS5 and Xbox Series X|S, and Rockstar hasn't announced a PC release date. That matches what happened with GTA V and Red Dead Redemption 2, which both arrived on PC well after their console launches.",
-          "If you're a PC-only player, there's no official timeline yet. Be wary of any website offering a GTA 6 PC download right now, because it isn't real and is very likely to be malware."
+          "If you're a PC-only player, there's no official timeline yet. Be wary of any website offering a GTA 6 PC download right now, because it isn't real and is very likely to be malware.",
+          "For the latest on timing, this week's unofficial-port drama and the scams to avoid, see our [GTA 6 PC release date guide](/blog/gta-6-pc-release-date-everything-we-know)."
         ]
       },
       {
@@ -805,7 +974,7 @@
     "author": "ClickVault Editorial",
     "status": "published",
     "publishedAt": "2026-11-20",
-    "updatedAt": "2026-11-20",
+    "updatedAt": "2026-11-28",
     "readingMinutes": 6
   },
   {

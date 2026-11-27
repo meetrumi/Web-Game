@@ -41,7 +41,7 @@ export async function generateMetadata(props) {
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/blog/${post.slug}`, types: { 'application/rss+xml': '/feed.xml' } },
     authors: [{ name: post.author }],
     keywords: post.keywords?.length ? post.keywords : undefined,
     openGraph: {

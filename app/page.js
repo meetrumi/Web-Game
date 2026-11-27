@@ -15,7 +15,7 @@ import { absoluteUrl, categories, site } from '@/lib/site'
 export const metadata = {
   title: `${site.name} — ${site.tagline}`,
   description: site.description,
-  alternates: { canonical: '/' },
+  alternates: { canonical: '/', types: { 'application/rss+xml': '/feed.xml' } },
 }
 
 export default function HomePage() {

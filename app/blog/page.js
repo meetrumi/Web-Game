@@ -7,7 +7,7 @@ import { absoluteUrl, site } from '@/lib/site'
 export const metadata = {
   title: 'Blog — Guides & Explainers',
   description: `Guides, explainers and deep dives on browser games, GTA 6 and gaming news from the ${site.name} team.`,
-  alternates: { canonical: '/blog' },
+  alternates: { canonical: '/blog', types: { 'application/rss+xml': '/feed.xml' } },
   openGraph: { type: 'website', url: '/blog', title: 'Blog — Guides & Explainers' },
 }
 

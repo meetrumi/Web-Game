@@ -13,6 +13,7 @@ export const metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  alternates: { types: { 'application/rss+xml': [{ url: '/feed.xml', title: `${site.name} Blog` }] } },
   keywords: [
     'unblocked games',
     'puzzle games',
